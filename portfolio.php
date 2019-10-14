@@ -33,40 +33,20 @@
 	            justify-content: center;
 			}
 
-			#particles-js {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-
-				z-index: 0;
-			}
-
 			#content {
-				z-index: 1;
-
 				color: white;
 				text-align: center;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="particles-js"></div>
 		<div id="content" class="p-3 bg-dark border rounded">
-			<h1 class="m-3">Alexis Trupin</h1>
-			<p>
-				<a href="https://github.com/HydroSnow"><button type="button" class="btn btn-primary">GitHub</button></a>
-				<a href="/portfolio.php"><button type="button" class="btn btn-primary">Portfolio</button></a>
-			</p>
+			<h1 class="m-3">Portfolio</h1>
+			<p>En construction...</p>
 		</div>
 		<script src="/lib/jquery-3.4.1.min.js"></script>
 		<script src="/lib/popper-1.15.0.min.js"></script>
 		<script src="/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-		<script src="/lib/particles.js-2.0.0/particles.min.js"></script>
-		<script>
-			particlesJS.load('particles-js', '/lib/particles.js-2.0.0/particles.json', function() {
-				console.log('callback - particles.js config loaded');
-			});
-		</script>
 	</body>
 </html>
 <!-- t'es moche, petit fouineur -->
