@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr-FR">
 	<head>
-		<title>HydroSnow</title>
+		<title>Alexis Trupin</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
