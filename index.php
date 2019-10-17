@@ -24,6 +24,8 @@
 	            display: -ms-flexbox;
 	            display: -webkit-box;
 	            display: flex;
+				
+				flex-direction: column;
 
 	            -ms-flex-align: center;
 	            -ms-flex-pack: center;
@@ -52,10 +54,12 @@
 	<body>
 		<div id="particles-js"></div>
 		<div id="content" class="p-3 bg-dark border rounded">
-			<h1 class="m-3">Alexis Trupin</h1>
+			<h1 class="mx-3 mt-3 mb-1">Alexis Trupin</h1>
+			<p class="mx-3 mt-1 mb-3 lead">Développeur</p>
 			<p class="m-3">
 				<a href="https://github.com/HydroSnow"><button type="button" class="btn btn-primary">GitHub</button></a>
 				<a href="/portfolio.php"><button type="button" class="btn btn-primary">Portfolio</button></a>
+				<a href="/contact.php"><button type="button" class="btn btn-primary">Contact</button></a>
 			</p>
 		</div>
 		<script src="/lib/jquery-3.4.1.min.js"></script>

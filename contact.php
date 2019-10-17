@@ -44,8 +44,8 @@
 	<body>
 		<p><a href="/"><button type="button" class="btn btn-primary">Retour à l'accueil</button></a></p>
 		<div id="content" class="p-3 bg-dark border rounded">
-			<h1 class="m-3">Portfolio</h1>
-			<p>En construction...</p>
+			<h1 class="m-3">Contact</h1>
+			<p class="m-3"><strong>E-mail :</strong> <a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a></p>
 		</div>
 		<script src="/lib/jquery-3.4.1.min.js"></script>
 		<script src="/lib/popper-1.15.0.min.js"></script>
