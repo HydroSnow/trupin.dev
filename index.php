@@ -53,7 +53,7 @@
 		<div id="particles-js"></div>
 		<div id="content" class="p-3 bg-dark border rounded">
 			<h1 class="m-3">Alexis Trupin</h1>
-			<p>
+			<p class="m-3">
 				<a href="https://github.com/HydroSnow"><button type="button" class="btn btn-primary">GitHub</button></a>
 				<a href="/portfolio.php"><button type="button" class="btn btn-primary">Portfolio</button></a>
 			</p>
