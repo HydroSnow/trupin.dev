@@ -24,7 +24,7 @@
 	            display: -ms-flexbox;
 	            display: -webkit-box;
 	            display: flex;
-				
+
 				flex-direction: column;
 
 	            -ms-flex-align: center;
@@ -59,8 +59,8 @@
 			<p class="m-3">
 				<a href="https://github.com/HydroSnow"><button type="button" class="btn btn-primary">GitHub</button></a>
 				<a href="/portfolio.php"><button type="button" class="btn btn-primary">Portfolio</button></a>
-				<a href="/contact.php"><button type="button" class="btn btn-primary">Contact</button></a>
 			</p>
+			<p class="m-3">trupin.alexis@gmail.com</p>
 		</div>
 		<script src="/lib/jquery-3.4.1.min.js"></script>
 		<script src="/lib/popper-1.15.0.min.js"></script>
