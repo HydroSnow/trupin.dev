@@ -17,7 +17,7 @@
 			min-height: 100vh;
 
 			background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-					rgba(0, 0, 0, 0.7)), url('/img/code.jpg');
+					rgba(0, 0, 0, 0.7)), url('/img/code2.jpg');
 			background-position: center top;
 			-webkit-background-size: cover;
 			background-size: cover;
@@ -188,17 +188,17 @@
 			<div class="content-line"></div>
 			<div class="row">
 				<div class="col-sm-6 col-md-4 link">
-					<img src="/img/link/github.png" />
+					<img src="/img/link/github2.png" />
 					<h3>GitHub</h3>
 					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
 				</div>
 				<div class="col-sm-6 col-md-4 link">
-					<img src="/img/link/linkedin.png" />
+					<img src="/img/link/linkedin2.png" />
 					<h3>LinkedIn</h3>
 					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin/</a>
 				</div>
 				<div class="col-sm-6 col-md-4 link">
-					<img src="/img/link/mail.png" />
+					<img src="/img/link/mail2.png" />
 					<h3>E-Mail</h3>
 					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
 				</div>
