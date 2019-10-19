@@ -1,3 +1,19 @@
+
+<?php
+	$birth = strtotime("2001-09-12 17:13:00");
+	$now = strtotime(date('Y-m-d H:i:s'));
+	$age = floor(($now - $birth) / (365 * 60 * 60 * 24));
+	$description = "Je suis un étudiant en développement de " . $age . " ans.";
+
+	$start_year = "2019";
+	$current_year = date("Y");
+	if ($start_year == $current_year) {
+		$copy_year = $start_year;
+	} else {
+		$copy_year = $start_year . " - " . $current_year;
+	}
+?>
+
 <!doctype html>
 <html lang="fr-FR">
 
@@ -5,7 +21,7 @@
 	<title>Alexis Trupin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="Bienvenue ! Je suis Alexis Trupin, étudiant en développement." />
+	<meta name="description" content="<?= $description ?>" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
 	<style>
@@ -131,13 +147,8 @@
 		<div class="container">
 			<h1 class="display-4">Présentation</h1>
 			<div class="content-line"></div>
-			<?php
-				$birth = strtotime("2001-09-12 17:13:00");
-				$now = strtotime(date('Y-m-d H:i:s'));
-				$years = floor(($now - $birth) / (365 * 60 * 60 * 24));
-			?>
 			<p class="lead m-3">
-				Je suis un étudiant en développement de <?= $years ?> ans. <br />
+				<?= $description ?> <br />
 				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>
 			</p>
 		</div>
@@ -220,15 +231,6 @@
 				<div class="col-sm-4 info">
 					<h4>Copyright</h4>
 					<p>
-						<?php
-								$start_year = "2019";
-								$current_year = date("Y");
-								if ($start_year == $current_year) {
-									$copy_year = $start_year;
-								} else {
-									$copy_year = $start_year . " - " . $current_year;
-								}
-							?>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
 						<a href="https://github.com/HydroSnow/trupin.dev/blob/master/LICENSE" class="text-white">Licence MIT</a>
 					</p>
