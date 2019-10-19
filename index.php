@@ -48,6 +48,15 @@
 				z-index: 1;
 			}
 
+			.header-line {
+				display: inline-block;
+
+				height: 1px;
+				width: 100px;
+
+				background-color: white;
+			}
+
 			section {
 				padding-top: 3em;
 				padding-bottoM: 3em;
@@ -96,6 +105,7 @@
 			<div id="particles"></div>
 			<div id="boxes" class="text-white">
 				<h1 style="font-size:5rem;">Alexis Trupin</h1>
+				<div class="header-line"></div>
 				<p class="lead" style="font-size:3rem;">Développeur</p>
 				<a href="#1">
 					<img style="width:3em;" src="/img/arrow.png" />
@@ -181,7 +191,7 @@
 					</div>
 					<div class="col-sm-4 info">
 						<h4>Source</h4>
-						<p><a href="https://github.com/HydroSnow/trupin.dev" class="text-white">github.com/trupin.dev</a></p>
+						<p><a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a></p>
 					</div>
 				</div>
 			</div>
