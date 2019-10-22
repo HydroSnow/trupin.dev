@@ -3,7 +3,7 @@
 	$birth = strtotime("2001-09-12 17:13:00");
 	$now = strtotime(date('Y-m-d H:i:s'));
 	$age = floor(($now - $birth) / (365 * 60 * 60 * 24));
-	$description = "Je suis un développeur de " . $age . " ans.";
+	$description = "Bonjour ! Je suis un développeur de " . $age . " ans.";
 
 	$start_year = "2019";
 	$current_year = date("Y");
