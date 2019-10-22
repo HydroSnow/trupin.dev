@@ -60,15 +60,15 @@
 			z-index: 0;
 		}
 
-		header #boxes {
+		header .boxes {
 			z-index: 1;
 		}
 
-		#trupixel {
+		header #trupixel {
 			height: 250px;
 		}
 
-		header #boxes p {
+		header p {
 			margin-bottom: 16px;
 		}
 
@@ -84,6 +84,10 @@
 		section {
 			padding-top: 3em;
 			padding-bottoM: 3em;
+		}
+
+		.bg-light {
+			background-color: #EEF !important;
 		}
 
 		.portfolio {
@@ -129,30 +133,24 @@
 		p {
 			margin: 0;
 		}
-
-		.bg-light {
-			background-color: #EEF !important;
-		}
 	</style>
 </head>
 
 <body>
-	<header class="text-white">
+	<header class="text-white py-5">
 		<div id="particles"></div>
-		<div id="boxes" class="py-5">
-			<img id="trupixel" src="/img/trupixel_512.png" />
-			<h1 style="font-size:5rem;">Alexis Trupin</h1>
-			<p class="lead" style="font-size:3rem;">Développeur</p>
-			<a href="#1">
-				<img style="width:3em;" src="/img/arrow.png" />
-			</a>
-		</div>
+		<img id="trupixel" class="boxes" src="/img/trupixel_512.png" />
+		<h1 class="boxes" style="font-size:5rem;">Alexis Trupin</h1>
+		<p class="lead boxes" style="font-size:3rem;">Développeur</p>
+		<a class="lead boxes" href="#1">
+			<img style="width:3em;" src="/img/arrow.png" />
+		</a>
 	</header>
 	<section id="1" class="bg-light">
 		<div class="container">
 			<h1 class="display-4">Présentation</h1>
 			<div class="content-line"></div>
-			<p class="lead m-3">
+			<p class="lead my-3">
 				<?= $description ?> <br />
 				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>
 			</p>
