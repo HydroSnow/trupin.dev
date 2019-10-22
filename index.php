@@ -187,7 +187,7 @@
 					<div>
 						<h2>Les 24h du Code 2020</h2>
 						<p class="mb-0">todo: description</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/24h.md">En savoir plus...</a></p>
+						<p>Portfolio à venir.</p>
 					</div>
 				</div>
 			</div>
