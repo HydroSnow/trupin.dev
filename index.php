@@ -76,9 +76,6 @@
 			display: inline-block;
 
 			height: 1px;
-			width: 100px;
-
-			background-color: black;
 		}
 
 		section {
@@ -149,7 +146,7 @@
 	<section id="1" class="bg-light">
 		<div class="container">
 			<h1 class="display-4">Présentation</h1>
-			<div class="content-line"></div>
+			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<p class="lead my-3">
 				<?= $description ?> <br />
 				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>
@@ -159,7 +156,7 @@
 	<section class="bg-white">
 		<div class="container">
 			<h1 class="display-4">Portfolio</h1>
-			<div class="content-line"></div>
+			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-12 col-md-6 portfolio p-3">
 					<img class="img-fluid" src="/img/portfolio/discord.png" alt="Logo Discord">
@@ -199,7 +196,7 @@
 	<section class="bg-light">
 		<div class="container">
 			<h1 class="display-4">Contact</h1>
-			<div class="content-line"></div>
+			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-sm-6 col-md-4 link">
 					<img src="/img/link/github2.png" />
