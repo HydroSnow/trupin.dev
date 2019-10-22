@@ -64,6 +64,10 @@
 			z-index: 1;
 		}
 
+		#trupixel {
+			height: 250px;
+		}
+
 		header #boxes p {
 			margin-bottom: 16px;
 		}
@@ -135,7 +139,8 @@
 <body>
 	<header class="text-white">
 		<div id="particles"></div>
-		<div id="boxes">
+		<div id="boxes" class="py-5">
+			<img id="trupixel" src="/img/trupixel_512.png" />
 			<h1 style="font-size:5rem;">Alexis Trupin</h1>
 			<p class="lead" style="font-size:3rem;">Développeur</p>
 			<a href="#1">
