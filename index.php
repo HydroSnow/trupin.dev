@@ -219,7 +219,7 @@
 	<footer class="bg-dark text-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 info">
+				<div class="col-sm-6 info">
 					<h4>Crédits</h4>
 					<p>
 						<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
@@ -228,18 +228,11 @@
 						<a href="https://vincentgarreau.com/particles.js/" class="text-white">particles.js</a>
 					</p>
 				</div>
-				<div class="col-sm-4 info">
+				<div class="col-sm-6 info">
 					<h4>Copyright</h4>
 					<p>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
-						<a href="https://github.com/HydroSnow/trupin.dev/blob/master/LICENSE" class="text-white">Licence MIT</a>
-					</p>
-				</div>
-				<div class="col-sm-4 info">
-					<h4>Sources</h4>
-					<p>
-						<a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a> <br />
-						<a href="https://github.com/HydroSnow/Portfolio" class="text-white">Portfolio sur GitHub</a>
+						<a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a>
 					</p>
 				</div>
 			</div>
