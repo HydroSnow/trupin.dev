@@ -204,7 +204,7 @@
 	<footer class="bg-dark text-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 info">
+				<div class="col-sm-4 info">
 					<h4>Crédits</h4>
 					<p>
 						<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
@@ -213,7 +213,10 @@
 						<a href="https://vincentgarreau.com/particles.js/" class="text-white">particles.js</a>
 					</p>
 				</div>
-				<div class="col-sm-6 info">
+				<div class="col-sm-4 info">
+					<img src="/img/petoncle.png" style="height:90px;" />
+				</div>
+				<div class="col-sm-4 info">
 					<h4>Copyright</h4>
 					<p>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
