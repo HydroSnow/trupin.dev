@@ -25,6 +25,10 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
 		body {
 			text-align: center;
 		}
