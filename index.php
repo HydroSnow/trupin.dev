@@ -25,6 +25,10 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
 		body {
 			text-align: center;
 		}
@@ -159,38 +163,23 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-12 col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/discord.png" alt="Logo Discord">
+					<img class="img-fluid" src="https://www.harion.fr/media/logo.png" alt="Logo Discord">
 					<div>
-						<h2>Bots Discord</h2>
-						<p class="mb-0">todo: description</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/discord.md">En savoir plus...</a></p>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/fromage.jpg" alt="Fromage">
-					<div>
-						<h2>Les Fromageries Wankul</h2>
-						<p class="mb-0">todo: description</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/wankul.md">En savoir plus...</a></p>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/aedificantes.jpg" alt="Logo Aedificantes">
-					<div>
-						<h2>Stage chez Aedificantes</h2>
-						<p class="mb-0">todo: description</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/aedificantes.md">En savoir plus...</a></p>
+						<h2>Harion</h2>
+						<p class="mb-0">Je suis l'administrateur de Harion, un serveur de jeu ouvert depuis septembre 2016.</p>
+						<p><a href="https://www.harion.fr/">Site officiel</a></p>
 					</div>
 				</div>
 				<div class="col-12 col-md-6 portfolio p-3">
 					<img class="img-fluid" src="/img/portfolio/24h.jpg" alt="Logo 24h du Code">
 					<div>
-						<h2>Les 24h du Code 2020</h2>
-						<p class="mb-0">todo: description</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/24h.md">En savoir plus...</a></p>
+						<h2>Les 24h du Code</h2>
+						<p class="mb-0">Je participe a la session 2020 des 24h du Code, un concours pour les passionnés de programmation.</p>
+						<p><a href="https://www.les24hducode.fr/">Site officiel</a></p>
 					</div>
 				</div>
 			</div>
+			<p class="lead">Le portfolio est actuellement incomplet. Vous pouvez consulter quelques unes de mes autres réalisations sur <a href="https://github.com/HydroSnow">github.com/HydroSnow</a>.</p>
 		</div>
 	</section>
 	<section class="bg-light">
@@ -229,17 +218,13 @@
 					</p>
 				</div>
 				<div class="col-sm-4 info">
+					<img src="/img/petoncle.png" style="height:90px;" />
+				</div>
+				<div class="col-sm-4 info">
 					<h4>Copyright</h4>
 					<p>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
-						<a href="https://github.com/HydroSnow/trupin.dev/blob/master/LICENSE" class="text-white">Licence MIT</a>
-					</p>
-				</div>
-				<div class="col-sm-4 info">
-					<h4>Sources</h4>
-					<p>
-						<a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a> <br />
-						<a href="https://github.com/HydroSnow/Portfolio" class="text-white">Portfolio sur GitHub</a>
+						<a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a>
 					</p>
 				</div>
 			</div>
