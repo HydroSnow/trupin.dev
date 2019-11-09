@@ -158,11 +158,11 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-12 col-md-6 portfolio p-3">
-					<img class="img-fluid" src="https://www.harion.fr/media/logo.png" alt="Logo Discord">
+					<img class="img-fluid" src="https://www.harion.fr/media/logo.png" alt="Logo Harion">
 					<div>
 						<h2>Harion</h2>
 						<p class="mb-0">Je suis l'administrateur de Harion, un serveur de jeu ouvert depuis septembre 2016.</p>
-						<p><a href="https://www.harion.fr/">Site officiel</a></p>
+						<p><a href="https://www.harion.fr/">Site officiel</a> - <a href="https://github.com/HydroSnow/Portfolio/blob/master/harion.md">En savoir plus</a></p>
 					</div>
 				</div>
 				<div class="col-12 col-md-6 portfolio p-3">
@@ -171,6 +171,22 @@
 						<h2>Les 24h du Code</h2>
 						<p class="mb-0">Je participe a la session 2020 des 24h du Code, un concours pour les passionnés de programmation.</p>
 						<p><a href="https://www.les24hducode.fr/">Site officiel</a></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 portfolio p-3">
+					<img class="img-fluid" src="/img/portfolio/discord.png" alt="Logo Discord">
+					<div>
+						<h2>Bots Discord</h2>
+						<p class="mb-0">Je développe des robots sur l'application de communication Discord.</p>
+						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/discord.md">En savoir plus</a></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 portfolio p-3">
+					<img class="img-fluid" src="/img/portfolio/manette.jpg" alt="Manette de jeux-vidéo">
+					<div>
+						<h2>Jeux</h2>
+						<p class="mb-0">Je développe des mini-jeux durant mon temps libre.</p>
+						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/jeux.md">En savoir plus</a></p>
 					</div>
 				</div>
 			</div>
