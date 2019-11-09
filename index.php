@@ -24,7 +24,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="<?= $description ?>" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
 	<style>
 		html {
 			scroll-behavior: smooth;
@@ -51,7 +51,7 @@
 			-webkit-box-pack: center;
 			justify-content: center;
 
-			background-image: linear-gradient(#00000055, #00000055), url('/img/header/snow-village.jpg');
+			background-image: linear-gradient(#00000055, #00000055), url('/assets/snow-village.jpg');
 			background-position: center top;
 			-webkit-background-size: cover;
 			background-size: cover;
@@ -148,7 +148,7 @@
 		<h1 class="boxes" style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead mb-3" style="font-size:3rem;">Développeur</p>
 		<a href="#1">
-			<img style="width:50px;" src="/img/header/arrow.png" />
+			<img style="width:50px;" src="/assets/arrow.png" />
 		</a>
 	</header>
 	<section id="1" class="nice-blue">
@@ -175,7 +175,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/24h.jpg" alt="Logo 24h du Code">
+					<img class="img-fluid" src="/assets/portfolio/24h.jpg" alt="Logo 24h du Code">
 					<div>
 						<h2>Les 24h du Code</h2>
 						<p class="mb-0">Je participe a la session 2020 des 24h du Code, un concours pour les passionnés de programmation.</p>
@@ -183,7 +183,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/discord.png" alt="Logo Discord">
+					<img class="img-fluid" src="/assets/portfolio/discord.png" alt="Logo Discord">
 					<div>
 						<h2>Bots Discord</h2>
 						<p class="mb-0">Je développe des robots sur l'application de communication Discord.</p>
@@ -191,7 +191,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/img/portfolio/manette.jpg" alt="Manette de jeux-vidéo">
+					<img class="img-fluid" src="/assets/portfolio/manette.jpg" alt="Manette de jeux-vidéo">
 					<div>
 						<h2>Jeux</h2>
 						<p class="mb-0">Je développe des mini-jeux durant mon temps libre.</p>
@@ -208,17 +208,17 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-md-4 link">
-					<img src="/img/link/github2.png" />
+					<img src="/assets/link/github2.png" />
 					<h3>GitHub</h3>
 					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
 				</div>
 				<div class="col-md-4 link">
-					<img src="/img/link/linkedin2.png" />
+					<img src="/assets/link/linkedin2.png" />
 					<h3>LinkedIn</h3>
 					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin/</a>
 				</div>
 				<div class="col-md-4 link">
-					<img src="/img/link/mail2.png" />
+					<img src="/assets/link/mail2.png" />
 					<h3>E-Mail</h3>
 					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
 				</div>
@@ -239,7 +239,7 @@
 					</p>
 				</div>
 				<div class="col-md-4 info">
-					<img src="/img/aqua.png" class="rounded" style="height:90px;" />
+					<img src="/assets/aqua.png" class="rounded" style="height:90px;" />
 				</div>
 				<div class="col-md-4 info">
 					<h4>Copyright</h4>
@@ -251,12 +251,12 @@
 			</div>
 		</div>
 	</footer>
-	<script src="/lib/jquery-3.4.1.min.js"></script>
-	<script src="/lib/popper-1.15.0.min.js"></script>
-	<script src="/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-	<script src="/lib/particles.js-2.0.0/particles.min.js"></script>
+	<script src="/vendor/jquery-3.4.1.min.js"></script>
+	<script src="/vendor/popper-1.15.0.min.js"></script>
+	<script src="/vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="/vendor/particles.js-2.0.0/particles.min.js"></script>
 	<script>
-		particlesJS.load('particles', '/cfg/particles-snow.json', async function() {
+		particlesJS.load('particles', '/assets/particles.json', async function() {
 			console.log('callback - particles.js config loaded');
 		});
 	</script>
