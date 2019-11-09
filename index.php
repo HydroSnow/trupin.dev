@@ -68,10 +68,6 @@
 			z-index: 1;
 		}
 
-		header #trupixel {
-			height: 250px;
-		}
-
 		header p {
 			margin-bottom: 16px;
 		}
@@ -140,7 +136,6 @@
 <body>
 	<header class="text-white py-5">
 		<div id="particles"></div>
-		<img id="trupixel" class="boxes" src="/img/trupixel_512.png" />
 		<h1 class="boxes" style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead boxes" style="font-size:3rem;">Développeur</p>
 		<a class="lead boxes" href="#1">
@@ -218,7 +213,7 @@
 					</p>
 				</div>
 				<div class="col-sm-4 info">
-					<img src="/img/petoncle.png" style="height:90px;" />
+					<img src="/img/aqua.png" class="rounded" style="height:90px;" />
 				</div>
 				<div class="col-sm-4 info">
 					<h4>Copyright</h4>
