@@ -139,7 +139,7 @@
 			margin: 0;
 		}
 	</style>
-	<meta name="theme-color" content="#000330" />
+	<meta name="theme-color" content="#010222" />
 </head>
 
 <body>
