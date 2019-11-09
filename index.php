@@ -1,10 +1,11 @@
-
-<?php
+<?php // birthday computing
 	$birth = strtotime("2001-09-12 17:13:00");
 	$now = strtotime(date('Y-m-d H:i:s'));
 	$age = floor(($now - $birth) / (365 * 60 * 60 * 24));
-	$description = "Bonjour ! Je suis un développeur de " . $age . " ans.";
+	$description = "Bonjour ! J'ai " . $age . " ans et je suis développeur.";
+?>
 
+<?php // copyright year computing
 	$start_year = "2019";
 	$current_year = date("Y");
 	if ($start_year == $current_year) {
@@ -31,16 +32,11 @@
 
 		body {
 			text-align: center;
+			font-size: 1.2em;
 		}
 
 		header {
 			min-height: 100vh;
-
-			background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-					rgba(0, 0, 0, 0.7)), url('/img/code2.jpg');
-			background-position: center top;
-			-webkit-background-size: cover;
-			background-size: cover;
 
 			display: -ms-flexbox;
 			display: -webkit-box;
@@ -54,22 +50,25 @@
 			align-items: center;
 			-webkit-box-pack: center;
 			justify-content: center;
+
+			background-image: linear-gradient(#00000055, #00000055), url('/img/header/snow-village.jpg');
+			background-position: center top;
+			-webkit-background-size: cover;
+			background-size: cover;
+
+			color: white;
 		}
 
-		header #particles {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-
-			z-index: 0;
-		}
-
-		header .boxes {
+		header>* {
 			z-index: 1;
 		}
 
-		header p {
-			margin-bottom: 16px;
+		header>#particles {
+			position: absolute;
+			z-index: 0;
+
+			width: 100%;
+			height: 100%;
 		}
 
 		.content-line {
@@ -83,8 +82,12 @@
 			padding-bottoM: 3em;
 		}
 
-		.bg-light {
-			background-color: #EEF !important;
+		.nice-blue {
+			background-color: #a5d4f0;
+		}
+
+		.nice-blue a {
+			color: black;
 		}
 
 		.portfolio {
@@ -108,14 +111,19 @@
 			margin-bottom: 2em;
 		}
 
-		.link img {
-			width: 20%;
+		.link>img {
+			width: 100px;
 			margin-bottom: 1em;
 		}
 
 		footer {
 			padding-top: 2em;
 			padding-bottom: 2em;
+			color: white;
+		}
+
+		footer a {
+			color: white;
 		}
 
 		.info {
@@ -134,21 +142,21 @@
 </head>
 
 <body>
-	<header class="text-white py-5">
+	<header class="py-5">
 		<div id="particles"></div>
 		<h1 class="boxes" style="font-size:5rem;">Alexis Trupin</h1>
-		<p class="lead boxes" style="font-size:3rem;">Développeur</p>
-		<a class="lead boxes" href="#1">
-			<img style="width:3em;" src="/img/arrow.png" />
+		<p class="lead mb-3" style="font-size:3rem;">Développeur</p>
+		<a href="#1">
+			<img style="width:50px;" src="/img/header/arrow.png" />
 		</a>
 	</header>
-	<section id="1" class="bg-light">
+	<section id="1" class="nice-blue">
 		<div class="container">
 			<h1 class="display-4">Présentation</h1>
 			<div class="content-line" style="background-color:black; width:100px;"></div>
-			<p class="lead my-3">
-				<?= $description ?> <br />
-				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>
+			<p class="my-3">
+				<?= $description ?>
+				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>.
 			</p>
 		</div>
 	</section>
@@ -157,7 +165,7 @@
 			<h1 class="display-4">Portfolio</h1>
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
-				<div class="col-12 col-md-6 portfolio p-3">
+				<div class="col-md-6 portfolio p-3">
 					<img class="img-fluid" src="https://www.harion.fr/media/logo.png" alt="Logo Harion">
 					<div>
 						<h2>Harion</h2>
@@ -165,7 +173,7 @@
 						<p><a href="https://www.harion.fr/">Site officiel</a> - <a href="https://github.com/HydroSnow/Portfolio/blob/master/harion.md">En savoir plus</a></p>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 portfolio p-3">
+				<div class="col-md-6 portfolio p-3">
 					<img class="img-fluid" src="/img/portfolio/24h.jpg" alt="Logo 24h du Code">
 					<div>
 						<h2>Les 24h du Code</h2>
@@ -173,7 +181,7 @@
 						<p><a href="https://www.les24hducode.fr/">Site officiel</a></p>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 portfolio p-3">
+				<div class="col-md-6 portfolio p-3">
 					<img class="img-fluid" src="/img/portfolio/discord.png" alt="Logo Discord">
 					<div>
 						<h2>Bots Discord</h2>
@@ -181,7 +189,7 @@
 						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/discord.md">En savoir plus</a></p>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 portfolio p-3">
+				<div class="col-md-6 portfolio p-3">
 					<img class="img-fluid" src="/img/portfolio/manette.jpg" alt="Manette de jeux-vidéo">
 					<div>
 						<h2>Jeux</h2>
@@ -190,25 +198,25 @@
 					</div>
 				</div>
 			</div>
-			<p class="lead">Le portfolio est actuellement incomplet. Vous pouvez consulter quelques unes de mes autres réalisations sur <a href="https://github.com/HydroSnow">github.com/HydroSnow</a>.</p>
+			<p>Le portfolio est actuellement incomplet. Vous pouvez consulter quelques unes de mes autres réalisations sur <a href="https://github.com/HydroSnow">github.com/HydroSnow</a>.</p>
 		</div>
 	</section>
-	<section class="bg-light">
+	<section class="nice-blue">
 		<div class="container">
 			<h1 class="display-4">Contact</h1>
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
-				<div class="col-sm-6 col-md-4 link">
+				<div class="col-md-4 link">
 					<img src="/img/link/github2.png" />
 					<h3>GitHub</h3>
 					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
 				</div>
-				<div class="col-sm-6 col-md-4 link">
+				<div class="col-md-4 link">
 					<img src="/img/link/linkedin2.png" />
 					<h3>LinkedIn</h3>
 					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin/</a>
 				</div>
-				<div class="col-sm-6 col-md-4 link">
+				<div class="col-md-4 link">
 					<img src="/img/link/mail2.png" />
 					<h3>E-Mail</h3>
 					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
@@ -216,22 +224,23 @@
 			</div>
 		</div>
 	</section>
-	<footer class="bg-dark text-white">
+	<footer class="bg-dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 info">
+				<div class="col-md-4 info">
 					<h4>Crédits</h4>
 					<p>
-						<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-						<a href="https://jquery.com/" class="text-white">jQuery</a>, <br />
-						<a href="https://popper.js.org/" class="text-white">popper.js</a>,
-						<a href="https://vincentgarreau.com/particles.js/" class="text-white">particles.js</a>
+						<a href="https://getbootstrap.com/">Bootstrap</a>,
+						<a href="https://jquery.com/">jQuery</a>,
+						<a href="https://popper.js.org/">popper.js</a>,
+						<a href="https://vincentgarreau.com/particles.js/">particles.js</a>,
+						<a href="https://pixabay.com/">Pixabay</a>
 					</p>
 				</div>
-				<div class="col-sm-4 info">
+				<div class="col-md-4 info">
 					<img src="/img/aqua.png" class="rounded" style="height:90px;" />
 				</div>
-				<div class="col-sm-4 info">
+				<div class="col-md-4 info">
 					<h4>Copyright</h4>
 					<p>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
@@ -246,7 +255,7 @@
 	<script src="/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 	<script src="/lib/particles.js-2.0.0/particles.min.js"></script>
 	<script>
-		particlesJS.load('particles', '/lib/particles.js-2.0.0/particles.json', function() {
+		particlesJS.load('particles', '/cfg/particles-snow.json', async function() {
 			console.log('callback - particles.js config loaded');
 		});
 	</script>
