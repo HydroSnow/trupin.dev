@@ -11,16 +11,16 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "image",
+      "type": "circle",
       "stroke": {
-        "width": 3,
+        "width": 1,
         "color": "#fff"
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
-        "src": "/assets/snow.png",
+        "src": "",
         "width": 100,
         "height": 100
       }
