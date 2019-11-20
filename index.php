@@ -90,6 +90,18 @@
 			color: navy;
 		}
 
+		a:hover {
+			color: blue;
+		}
+
+		.bg-dark a {
+			color: white;
+		}
+
+		.bg-dark a:hover {
+			color: #ccf;
+		}
+
 		.portfolio {
 			display: flex;
 			padding: 1em;
@@ -119,10 +131,6 @@
 		footer {
 			padding-top: 2em;
 			padding-bottom: 2em;
-			color: white;
-		}
-
-		footer a {
 			color: white;
 		}
 
@@ -245,7 +253,7 @@
 					<h4>Copyright</h4>
 					<p>
 						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
-						<a href="https://github.com/HydroSnow/trupin.dev" class="text-white">trupin.dev sur GitHub</a>
+						<a href="https://github.com/HydroSnow/trupin.dev">trupin.dev sur GitHub</a>
 					</p>
 				</div>
 			</div>
