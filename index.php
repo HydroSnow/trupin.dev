@@ -86,8 +86,8 @@
 			background-color: #a5d4f0;
 		}
 
-		.nice-blue a {
-			color: black;
+		a {
+			color: navy;
 		}
 
 		.portfolio {
