@@ -215,7 +215,7 @@
 				<div class="col-md-4 link">
 					<img src="/assets/link/linkedin.svg" />
 					<h3>LinkedIn</h3>
-					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin/</a>
+					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin</a>
 				</div>
 				<div class="col-md-4 link">
 					<img src="/assets/link/mail.svg" />
