@@ -208,17 +208,17 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-md-4 link">
-					<img src="/assets/link/github2.png" />
+					<img src="/assets/link/github.svg" />
 					<h3>GitHub</h3>
 					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
 				</div>
 				<div class="col-md-4 link">
-					<img src="/assets/link/linkedin2.png" />
+					<img src="/assets/link/linkedin.svg" />
 					<h3>LinkedIn</h3>
 					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin/</a>
 				</div>
 				<div class="col-md-4 link">
-					<img src="/assets/link/mail2.png" />
+					<img src="/assets/link/mail.svg" />
 					<h3>E-Mail</h3>
 					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
 				</div>
