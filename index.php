@@ -16,12 +16,16 @@
 ?>
 
 <?php // disable particles
-	if (isset($_GET['d_par'])) {
-		$particles = false;
-		echo("<!-- particles disabled -->");
-	} else {
+	if (!isset($_COOKIE["particles"])) {
+		$_COOKIE["particles"] = 1;
+	}
+
+	if ($_COOKIE["particles"] == 1) {
 		$particles = true;
 		echo("<!-- particles enabled -->");
+	} else {
+		$particles = false;
+		echo("<!-- particles disabled -->");
 	}
 ?>
 
@@ -207,9 +211,23 @@
 <body>
 	<p id="particles-switch">
 		<?php if ($particles) { ?>
-			<a href="/?d_par">Désactiver les particules</a>
+			<a id="disable-particles" href="#">Désactiver les particules</a>
+			<script>
+				document.getElementById("disable-particles").onclick = function() {
+					document.cookie = "particles=0";
+					document.location.reload(false);
+					return false;
+				}
+			</script>
 		<?php } else { ?>
-			<a href="/">Activer les particules</a>
+			<a id="enable-particles" href="#">Activer les particules</a>
+			<script>
+				document.getElementById("enable-particles").onclick = function() {
+					document.cookie = "particles=1";
+					document.location.reload(false);
+					return false;
+				}
+			</script>
 		<?php } ?>
 	</p>
 	<header class="py-5">
