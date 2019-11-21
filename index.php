@@ -93,7 +93,7 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="https://www.harion.fr/media/logo.png" alt="Logo Harion">
+					<img class="img-fluid" src="/assets/portfolio/harion.png" alt="Logo Harion">
 					<div>
 						<h2>Harion</h2>
 						<p class="mb-0">Je suis l'administrateur de Harion, un serveur de jeu ouvert depuis septembre 2016.</p>
