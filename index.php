@@ -34,7 +34,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="<?= $description ?>" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<style>
 		html {
 			scroll-behavior: smooth;
@@ -320,11 +320,10 @@
 			</div>
 		</div>
 	</footer>
-	<script src="/vendor/jquery-3.4.1.min.js"></script>
-	<script src="/vendor/popper-1.15.0.min.js"></script>
-	<script src="/vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="/node_modules/jquery/jquery.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<?php if ($particles) { ?>
-		<script src="/vendor/particles.js-2.0.0/particles.min.js"></script>
+		<script src="/node_modules/particles.js/particles.js"></script>
 		<script>
 			particlesJS.load('particles', '/assets/particles.json', async function() {
 				console.log('callback - particles.js config loaded');
