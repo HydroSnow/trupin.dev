@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.content-line {
+    display: inline-block;
+
+    height: 1px;
+}
+
+section > .container {
+    padding-top: 3em;
+    padding-bottoM: 3em;
+}
+
+.section-blue {
+    background-color: #cdf;
+}
+
+.section-white {
+    background-color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: navy;
+}
+
+a:hover {
+    color: blue;
+}
+
+.bg-dark a {
+    color: white;
+}
+
+.bg-dark a:hover {
+    color: #ccf;
+}
