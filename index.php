@@ -165,7 +165,7 @@
 					</p>
 				</div>
 				<div class="col-md-4 info">
-					<img src="/assets/aqua.png" class="rounded" style="height:90px;" />
+					<img src="/assets/aqua.png" class="rounded" style="height:90px;" alt="Anime girl screaming" />
 				</div>
 				<div class="col-md-4 info">
 					<h4>Copyright</h4>
