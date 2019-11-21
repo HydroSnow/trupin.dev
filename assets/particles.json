@@ -4,7 +4,7 @@
       "value": 400,
       "density": {
         "enable": true,
-        "value_area": 3200
+        "value_area": 6400
       }
     },
     "color": {
@@ -95,7 +95,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 100,
+        "distance": 150,
         "duration": 0.2
       },
       "push": {
