@@ -40,8 +40,8 @@
 	<meta name="theme-color" content="#010222" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/header.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/header.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/portfolio.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/footer.css" />
