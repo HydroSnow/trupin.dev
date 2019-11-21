@@ -74,7 +74,7 @@
 		<h1 class="header-content" style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead mb-3 header-content" style="font-size:3rem;">Développeur</p>
 		<a class="header-content" href="#1">
-		    <img style="width:50px;" src="/assets/arrow.png" />
+		    <img style="width:50px;" src="/assets/arrow.png" alt="Vers le bas" />
 		</a>
 	</header>
 	<section id="1" class="section-blue">
@@ -134,17 +134,17 @@
 			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
 				<div class="col-md-4 contact">
-					<img src="/assets/link/github.svg" />
+					<img src="/assets/link/github.svg" alt="Logo GitHub" />
 					<h3>GitHub</h3>
 					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
 				</div>
 				<div class="col-md-4 contact">
-					<img src="/assets/link/linkedin.svg" />
+					<img src="/assets/link/linkedin.svg" alt="Logo LinkedIn" />
 					<h3>LinkedIn</h3>
 					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin</a>
 				</div>
 				<div class="col-md-4 contact">
-					<img src="/assets/link/mail.svg" />
+					<img src="/assets/link/mail.svg" alt="Icone E-Mail" />
 					<h3>E-Mail</h3>
 					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
 				</div>
