@@ -15,6 +15,16 @@
 	}
 ?>
 
+<?php // disable particles
+	if (isset($_GET['d_par'])) {
+		$particles = false;
+		echo("<!-- particles disabled -->");
+	} else {
+		$particles = true;
+		echo("<!-- particles enabled -->");
+	}
+?>
+
 <!doctype html>
 <html lang="fr-FR">
 
@@ -33,6 +43,18 @@
 		body {
 			text-align: center;
 			font-size: 1.2em;
+		}
+
+		#particles-switch {
+		    position: absolute;
+		    z-index: 1;
+
+			left: 10px;
+			top: 10px;
+		}
+
+		#particles-switch>a {
+			color: gray;
 		}
 
 		header {
@@ -69,19 +91,19 @@
 		    -o-animation: fadein 2s; /* Opera < 12.1 */
 		}
 
-		header>#particles {
-			position: absolute;
-			z-index: 0;
+		<?php if ($particles) { ?> header>#particles {
+		    position: absolute;
+		    z-index: 0;
 
-			width: 100%;
-			height: 100%;
+		    width: 100%;
+		    height: 100%;
 
 		    animation: fadein 10s;
 		    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
 		    -moz-animation: fadein 10s; /* Firefox < 16 */
 		    -ms-animation: fadein 10s; /* Internet Explorer */
 		    -o-animation: fadein 10s; /* Opera < 12.1 */
-		}
+		} <?php } ?>
 
 		@keyframes fadein {
 		    from { opacity: 0; } to { opacity: 1; }
@@ -183,8 +205,15 @@
 </head>
 
 <body>
+	<p id="particles-switch">
+		<?php if ($particles) { ?>
+			<a href="/?d_par">Désactiver les particules</a>
+		<?php } else { ?>
+			<a href="/">Activer les particules</a>
+		<?php } ?>
+	</p>
 	<header class="py-5">
-		<div id="particles"></div>
+		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
 		<h1 class="boxes titles" style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead mb-3 titles" style="font-size:3rem;">Développeur</p>
 		<a class="titles" href="#1">
@@ -294,12 +323,14 @@
 	<script src="/vendor/jquery-3.4.1.min.js"></script>
 	<script src="/vendor/popper-1.15.0.min.js"></script>
 	<script src="/vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-	<script src="/vendor/particles.js-2.0.0/particles.min.js"></script>
-	<script>
-		particlesJS.load('particles', '/assets/particles.json', async function() {
-			console.log('callback - particles.js config loaded');
-		});
-	</script>
+	<?php if ($particles) { ?>
+		<script src="/vendor/particles.js-2.0.0/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles', '/assets/particles.json', async function() {
+				console.log('callback - particles.js config loaded');
+			});
+		</script>
+	<?php } ?>
 </body>
 
 </html>
