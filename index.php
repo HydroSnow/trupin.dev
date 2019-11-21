@@ -59,8 +59,14 @@
 			color: white;
 		}
 
-		header>* {
-			z-index: 1;
+		header>.titles {
+		    z-index: 1;
+
+		    animation: fadein 2s;
+		    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+		    -moz-animation: fadein 2s; /* Firefox < 16 */
+		    -ms-animation: fadein 2s; /* Internet Explorer */
+		    -o-animation: fadein 2s; /* Opera < 12.1 */
 		}
 
 		header>#particles {
@@ -69,6 +75,32 @@
 
 			width: 100%;
 			height: 100%;
+
+		    animation: fadein 10s;
+		    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+		    -moz-animation: fadein 10s; /* Firefox < 16 */
+		    -ms-animation: fadein 10s; /* Internet Explorer */
+		    -o-animation: fadein 10s; /* Opera < 12.1 */
+		}
+
+		@keyframes fadein {
+		    from { opacity: 0; } to { opacity: 1; }
+		}
+
+		@-moz-keyframes fadein { /* Firefox < 16 */
+		    from { opacity: 0; } to { opacity: 1; }
+		}
+
+		@-webkit-keyframes fadein { /* Safari, Chrome and Opera > 12.1 */
+		    from { opacity: 0; } to { opacity: 1; }
+		}
+
+		@-ms-keyframes fadein { /* Internet Explorer */
+		    from { opacity: 0; } to { opacity: 1; }
+		}
+
+		@-o-keyframes fadein { /* Opera < 12.1 */
+		    from { opacity: 0; } to { opacity: 1; }
 		}
 
 		.content-line {
@@ -153,10 +185,10 @@
 <body>
 	<header class="py-5">
 		<div id="particles"></div>
-		<h1 class="boxes" style="font-size:5rem;">Alexis Trupin</h1>
-		<p class="lead mb-3" style="font-size:3rem;">Développeur</p>
-		<a href="#1">
-			<img style="width:50px;" src="/assets/arrow.png" />
+		<h1 class="boxes titles" style="font-size:5rem;">Alexis Trupin</h1>
+		<p class="lead mb-3 titles" style="font-size:3rem;">Développeur</p>
+		<a class="titles" href="#1">
+		    <img style="width:50px;" src="/assets/arrow.png" />
 		</a>
 	</header>
 	<section id="1" class="nice-blue">
