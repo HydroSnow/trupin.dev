@@ -211,7 +211,7 @@
 <body>
 	<p id="particles-switch">
 		<?php if ($particles) { ?>
-			<a id="disable-particles" href="#">Désactiver les particules</a>
+			<button id="disable-particles" type="button" class="btn btn-success">Particules</button>
 			<script>
 				document.getElementById("disable-particles").onclick = function() {
 					document.cookie = "particles=0";
@@ -220,7 +220,7 @@
 				}
 			</script>
 		<?php } else { ?>
-			<a id="enable-particles" href="#">Activer les particules</a>
+			<button id="enable-particles" type="button" class="btn btn-danger">Particules</button>
 			<script>
 				document.getElementById("enable-particles").onclick = function() {
 					document.cookie = "particles=1";
