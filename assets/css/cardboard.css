@@ -12,6 +12,7 @@
 .cardboard-linkedin { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/linkedin-back.jpg'); }
 .cardboard-cv { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/cv-back.jpg'); }
 .cardboard-portfolio { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/portfolio-back.jpg'); }
+.cardboard-mail { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/mail-back.jpg'); }
 
 .cardboard:hover {
     transform: scale(0.95);

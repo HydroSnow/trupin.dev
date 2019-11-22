@@ -83,14 +83,31 @@
 			</script>
 		<?php } ?>
 	</p>
-	<header class="py-5">
+
+	<div class="modal fade" id="mail-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">E-Mail</h5>
+			</div>
+			<div class="modal-body">
+				<a href="mailto:trupin.alexis@gmail.com" target="new">trupin.alexis@gmail.com</a>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<header class="py-5 white-links">
 		<h1 style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead mb-3" style="font-size:2rem;"><?= $description ?></p>
 		<a href="#1">
 		    <img style="width:50px;" src="/assets/arrow.png" alt="Vers le bas" />
 		</a>
 	</header>
-	<section class="py-5 bg-white" id="1">
+	<section class="py-5 bg-white white-links" id="1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 p-1">
@@ -125,10 +142,18 @@
 						</div>
 					</a>
 				</div>
+				<div class="col-lg-6 p-1">
+					<a href="#" onclick="$('#mail-modal').modal(); return false;" class="cardboard cardboard-mail">
+						<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
+						<div>
+							<h3>E-Mail<h3>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer class="white-links">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 info">

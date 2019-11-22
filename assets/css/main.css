@@ -15,6 +15,10 @@ body {
 }
 
 a, a:hover, a:focus {
+    color: black;
+}
+
+.white-links a, .white-links a:hover, .white-links a:focus {
     color: white;
 }
 
