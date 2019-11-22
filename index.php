@@ -85,7 +85,7 @@
 	</p>
 	<header class="py-5">
 		<h1 style="font-size:5rem;">Alexis Trupin</h1>
-		<p class="lead mb-3" style="font-size:3rem;">Développeur</p>
+		<p class="lead mb-3" style="font-size:2rem;"><?= $description ?></p>
 		<a href="#1">
 		    <img style="width:50px;" src="/assets/arrow.png" alt="Vers le bas" />
 		</a>
