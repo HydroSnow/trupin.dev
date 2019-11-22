@@ -1,0 +1,29 @@
+.cardboard {
+    display: flex;
+
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    transition: all .2s ease-in-out;
+}
+
+.cardboard-github { background-image: linear-gradient(#000A, #000A), url('/assets/cardboard/github-back.jpg'); }
+.cardboard-linkedin { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/linkedin-back.jpg'); }
+.cardboard-cv { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/cv-back.jpg'); }
+.cardboard-portfolio { background-image: linear-gradient(#000B, #000B), url('/assets/cardboard/portfolio-back.jpg'); }
+
+.cardboard:hover {
+    transform: scale(0.95);
+}
+
+.cardboard > img {
+    width: 20%;
+    min-width: 75px;
+
+    padding: 1em;
+}
+
+.cardboard > div {
+    padding: 1em;
+}

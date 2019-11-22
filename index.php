@@ -15,17 +15,30 @@
 	}
 ?>
 
+<?php // mobile_detect load
+	require_once("vendor/mobile_detect/Mobile_Detect.php");
+	$detect = new Mobile_Detect;
+?>
+
 <?php // disable particles
 	if (!isset($_COOKIE["particles"])) {
-		$_COOKIE["particles"] = 1;
-	}
-
-	if ($_COOKIE["particles"] == 1) {
-		$particles = true;
-		echo("<!-- particles enabled -->");
+		if (!$detect->isMobile() && !$detect->isTablet()) {
+			setcookie("particles", 1);
+			$particles = true;
+			echo("<!-- auto-detect: particles enabled -->");
+		} else {
+			setcookie("particles", 0);
+			$particles = false;
+			echo("<!-- auto-detect: particles disabled -->");
+		}
 	} else {
-		$particles = false;
-		echo("<!-- particles disabled -->");
+		if ($_COOKIE["particles"] == 1) {
+			$particles = true;
+			echo("<!-- particles enabled -->");
+		} else {
+			$particles = false;
+			echo("<!-- particles disabled -->");
+		}
 	}
 ?>
 
@@ -37,17 +50,18 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="<?= $description ?>" />
-	<meta name="theme-color" content="#010222" />
+	<meta name="theme-color" content="#01021b" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<?php if ($particles) { ?> <link rel="stylesheet" type="text/css" href="/assets/css/particles.css" /> <?php } ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/header.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/portfolio.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/cardboard.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/footer.css" />
 </head>
 
 <body>
+	<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
 	<p id="particles-switch">
 		<?php if ($particles) { ?>
 			<button id="disable-particles" type="button" class="btn btn-success">Particules</button>
@@ -70,88 +84,51 @@
 		<?php } ?>
 	</p>
 	<header class="py-5">
-		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
-		<h1 class="header-content" style="font-size:5rem;">Alexis Trupin</h1>
-		<p class="lead mb-3 header-content" style="font-size:3rem;">Développeur</p>
-		<a class="header-content" href="#1">
+		<h1 style="font-size:5rem;">Alexis Trupin</h1>
+		<p class="lead mb-3" style="font-size:3rem;">Développeur</p>
+		<a href="#1">
 		    <img style="width:50px;" src="/assets/arrow.png" alt="Vers le bas" />
 		</a>
 	</header>
-	<section id="1" class="section-blue">
+	<section class="py-5 bg-white" id="1">
 		<div class="container">
-			<h1 class="display-4">Présentation</h1>
-			<div class="content-line" style="background-color:black; width:100px;"></div>
-			<p class="my-3">
-				<?= $description ?>
-				<a href="/CV_Trupin_V3.pdf">Cliquez ici pour consulter mon CV</a>.
-			</p>
-		</div>
-	</section>
-	<section class="section-white">
-		<div class="container">
-			<h1 class="display-4">Portfolio</h1>
-			<div class="content-line" style="background-color:black; width:100px;"></div>
 			<div class="row">
-				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/assets/portfolio/harion.png" alt="Logo Harion">
-					<div>
-						<h2>Harion</h2>
-						<p class="mb-0">Je suis l'administrateur de Harion, un serveur de jeu ouvert depuis septembre 2016.</p>
-						<p><a href="https://www.harion.fr/">Site officiel</a> - <a href="https://github.com/HydroSnow/Portfolio/blob/master/harion.md">En savoir plus</a></p>
-					</div>
+				<div class="col-lg-6 p-1">
+					<a href="https://github.com/HydroSnow" target="new" class="cardboard cardboard-github">
+						<img src="/assets/cardboard/github.png" alt="Logo GitHub" />
+						<div>
+							<h3>GitHub<h3>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/assets/portfolio/24h.jpg" alt="Logo 24h du Code">
-					<div>
-						<h2>Les 24h du Code</h2>
-						<p class="mb-0">Je participe a la session 2020 des 24h du Code, un concours pour les passionnés de programmation.</p>
-						<p><a href="https://www.les24hducode.fr/">Site officiel</a></p>
-					</div>
+				<div class="col-lg-6 p-1">
+					<a href="https://www.linkedin.com/in/trupin/" target="new" class="cardboard cardboard-linkedin">
+						<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
+						<div>
+							<h3>LinkedIn<h3>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/assets/portfolio/discord.png" alt="Logo Discord">
-					<div>
-						<h2>Bots Discord</h2>
-						<p class="mb-0">Je développe des robots sur l'application de communication Discord.</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/discord.md">En savoir plus</a></p>
-					</div>
+				<div class="col-lg-6 p-1">
+					<a href="/CV_Trupin_V3.pdf" target="new" class="cardboard cardboard-cv">
+						<img src="/assets/cardboard/cv.png" alt="Icône CV" />
+						<div>
+							<h3>CV<h3>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-6 portfolio p-3">
-					<img class="img-fluid" src="/assets/portfolio/manette.jpg" alt="Manette de jeux-vidéo">
-					<div>
-						<h2>Jeux</h2>
-						<p class="mb-0">Je développe des mini-jeux durant mon temps libre.</p>
-						<p><a href="https://github.com/HydroSnow/Portfolio/blob/master/jeux.md">En savoir plus</a></p>
-					</div>
-				</div>
-			</div>
-			<p>Le portfolio est actuellement incomplet. Vous pouvez consulter quelques unes de mes autres réalisations sur <a href="https://github.com/HydroSnow">github.com/HydroSnow</a>.</p>
-		</div>
-	</section>
-	<section class="section-blue">
-		<div class="container">
-			<h1 class="display-4">Contact</h1>
-			<div class="content-line" style="background-color:black; width:100px;"></div>
-			<div class="row">
-				<div class="col-md-4 contact">
-					<img src="/assets/link/github.svg" alt="Logo GitHub" />
-					<h3>GitHub</h3>
-					<a href="https://github.com/HydroSnow">github.com/HydroSnow</a>
-				</div>
-				<div class="col-md-4 contact">
-					<img src="/assets/link/linkedin.svg" alt="Logo LinkedIn" />
-					<h3>LinkedIn</h3>
-					<a href="https://linkedin.com/in/trupin/">linkedin.com/in/trupin</a>
-				</div>
-				<div class="col-md-4 contact">
-					<img src="/assets/link/mail.svg" alt="Icone E-Mail" />
-					<h3>E-Mail</h3>
-					<a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a>
+				<div class="col-lg-6 p-1">
+					<a href="https://portfolio.trupin.dev/" target="new" class="cardboard cardboard-portfolio">
+						<img src="/assets/cardboard/portfolio.png" alt="Logo GitHub" />
+						<div>
+							<h3>Portfolio<h3>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer class="bg-dark">
+	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 info">
@@ -165,22 +142,23 @@
 					</p>
 				</div>
 				<div class="col-md-4 info">
-					<img src="/assets/aqua.png" class="rounded" style="height:90px;" alt="Anime girl screaming" />
+					<img src="/assets/aqua.png" style="width:100px;" alt="Fille d'anime qui crie" />
 				</div>
 				<div class="col-md-4 info">
 					<h4>Copyright</h4>
 					<p>
-						<?= $copy_year ?> &copy; Alexis Trupin</a><br />
+						<?= $copy_year ?> &copy; Alexis Trupin</a>,
 						<a href="https://github.com/HydroSnow/trupin.dev">trupin.dev sur GitHub</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
 	<?php if ($particles) { ?>
-		<script src="/node_modules/particles.js/particles.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
 		<script>
 			particlesJS.load('particles', '/assets/particles.json', async function() {
 				console.log('callback - particles.js config loaded');
