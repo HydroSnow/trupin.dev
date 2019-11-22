@@ -7,11 +7,6 @@ body {
 
     text-align: center;
     font-size: 1.2em;
-
-    background-image: linear-gradient(#0007, #0007), url('/assets/snow-village.webp');
-    background-position: center top;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 a, a:hover, a:focus {

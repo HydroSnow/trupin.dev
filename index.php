@@ -61,29 +61,6 @@
 </head>
 
 <body>
-	<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
-	<p id="particles-switch">
-		<?php if ($particles) { ?>
-			<button id="disable-particles" type="button" class="btn btn-success">Particules</button>
-			<script>
-				document.getElementById("disable-particles").onclick = function() {
-					document.cookie = "particles=0";
-					document.location.reload(false);
-					return false;
-				}
-			</script>
-		<?php } else { ?>
-			<button id="enable-particles" type="button" class="btn btn-danger">Particules</button>
-			<script>
-				document.getElementById("enable-particles").onclick = function() {
-					document.cookie = "particles=1";
-					document.location.reload(false);
-					return false;
-				}
-			</script>
-		<?php } ?>
-	</p>
-
 	<div class="modal fade" id="mail-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
 		<div class="modal-content">
@@ -101,6 +78,30 @@
 	</div>
 
 	<header class="py-5 white-links">
+		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
+
+		<p id="particles-switch">
+			<?php if ($particles) { ?>
+				<button id="disable-particles" type="button" class="btn btn-success">Particules</button>
+				<script>
+					document.getElementById("disable-particles").onclick = function() {
+						document.cookie = "particles=0";
+						document.location.reload(false);
+						return false;
+					}
+				</script>
+			<?php } else { ?>
+				<button id="enable-particles" type="button" class="btn btn-danger">Particules</button>
+				<script>
+					document.getElementById("enable-particles").onclick = function() {
+						document.cookie = "particles=1";
+						document.location.reload(false);
+						return false;
+					}
+				</script>
+			<?php } ?>
+		</p>
+
 		<h1 style="font-size:5rem;">Alexis Trupin</h1>
 		<p class="lead mb-3" style="font-size:2rem;"><?= $description ?></p>
 		<a href="#1">
@@ -153,7 +154,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="white-links">
+	<footer class="bg-dark white-links">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 info">
