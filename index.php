@@ -99,11 +99,19 @@
 				</div>
 			</a>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg');">
-			<a href="https://www.linkedin.com/in/trupin/">
-				<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
+		<div class="cardboard" style="background-image: url('/assets/cardboard/portfolio-back.jpg');">
+			<a href="https://portfolio.trupin.dev/">
+				<img src="/assets/cardboard/portfolio.png" alt="Logo GitHub" />
 				<div>
-					<h3>LinkedIn<h3>
+					<h3>Portfolio<h3>
+				</div>
+			</a>
+		</div>
+		<div class="cardboard" style="background-image: url('/assets/cardboard/hydrosnow-back.jpg');">
+			<a href="https://www.hydrosnow.dev/">
+				<img src="/assets/cardboard/hydrosnow.png" alt="Logo Internet" />
+				<div>
+					<h3>HydroSnow<h3>
 				</div>
 			</a>
 		</div>
@@ -115,14 +123,6 @@
 				</div>
 			</a>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/portfolio-back.jpg');">
-			<a href="https://portfolio.trupin.dev/">
-				<img src="/assets/cardboard/portfolio.png" alt="Logo GitHub" />
-				<div>
-					<h3>Portfolio<h3>
-				</div>
-			</a>
-		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg');">
 			<a href="/mail.php">
 				<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
@@ -131,11 +131,11 @@
 				</div>
 			</a>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/hydrosnow-back.jpg');">
-			<a href="https://www.hydrosnow.dev/">
-				<img src="/assets/cardboard/hydrosnow.png" alt="Logo Internet" />
+		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg');">
+			<a href="https://www.linkedin.com/in/trupin/">
+				<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
 				<div>
-					<h3>HydroSnow<h3>
+					<h3>LinkedIn<h3>
 				</div>
 			</a>
 		</div>
