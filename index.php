@@ -16,7 +16,7 @@
 ?>
 
 <?php // mobile_detect load
-	require_once("vendor/mobile_detect/Mobile_Detect.php");
+	require_once("vendor/Mobile_Detect.php");
 	$detect = new Mobile_Detect;
 ?>
 
@@ -146,7 +146,7 @@
 	</footer>
 
 	<?php if ($particles) { ?>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
+		<script src="/vendor/particles.min.js"></script>
 		<script>
 			particlesJS.load('particles', '/assets/particles.json', async function() {
 				console.log('callback - particles.js config loaded');
