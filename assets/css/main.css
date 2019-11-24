@@ -33,7 +33,7 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: normal;
 }
 
@@ -121,6 +121,7 @@ section {
 }
 
 .cardboard > a > img {
+    margin-top: 8px;
     margin-bottom: 16px;
     width: 100px;
 }

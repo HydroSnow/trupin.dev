@@ -131,6 +131,14 @@
 				</div>
 			</a>
 		</div>
+		<div class="cardboard" style="background-image: url('/assets/cardboard/hydrosnow-back.jpg');">
+			<a href="https://www.hydrosnow.dev/">
+				<img src="/assets/cardboard/hydrosnow.png" alt="Logo Internet" />
+				<div>
+					<h3>HydroSnow<h3>
+				</div>
+			</a>
+		</div>
 	</section>
 
 	<footer class="black">
