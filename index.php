@@ -92,7 +92,7 @@
 
 	<section>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg');">
-			<a href="https://github.com/HydroSnow" target="new">
+			<a href="https://github.com/HydroSnow">
 				<img src="/assets/cardboard/github.png" alt="Logo GitHub" />
 				<div>
 					<h3>GitHub<h3>
@@ -100,7 +100,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg');">
-			<a href="https://www.linkedin.com/in/trupin/" target="new">
+			<a href="https://www.linkedin.com/in/trupin/">
 				<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
 				<div>
 					<h3>LinkedIn<h3>
@@ -108,7 +108,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/cv-back.jpg');">
-			<a href="/CV_Trupin_V3.pdf" target="new">
+			<a href="/CV_Trupin_V3.pdf">
 				<img src="/assets/cardboard/cv.png" alt="Icône CV" />
 				<div>
 					<h3>Mon CV<h3>
@@ -116,7 +116,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/portfolio-back.jpg');">
-			<a href="https://portfolio.trupin.dev/" target="new">
+			<a href="https://portfolio.trupin.dev/">
 				<img src="/assets/cardboard/portfolio.png" alt="Logo GitHub" />
 				<div>
 					<h3>Portfolio<h3>
@@ -124,7 +124,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg');">
-			<a href="/mail.html" target="new">
+			<a href="/mail.html">
 				<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
 				<div>
 					<h3>E-Mail<h3>
