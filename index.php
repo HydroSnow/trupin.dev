@@ -124,7 +124,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg');">
-			<a href="/mail.html">
+			<a href="/mail.php">
 				<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
 				<div>
 					<h3>E-Mail<h3>
