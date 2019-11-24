@@ -142,7 +142,7 @@
 	</section>
 
 	<footer class="black">
-		<h4><?= $copy_year ?> &copy; Alexis Trupin</a>, <a href="https://github.com/HydroSnow/trupin.dev">trupin.dev sur GitHub</a></h4>
+		<h4><?= $copy_year ?> &copy; Alexis Trupin</a> - <a href="https://github.com/HydroSnow/trupin.dev">trupin.dev sur GitHub</a></h4>
 	</footer>
 
 	<?php if ($particles) { ?>
