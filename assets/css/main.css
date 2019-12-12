@@ -112,6 +112,7 @@ section {
     display: block;
 
     background-color: #0009;
+    color: #FFF;
 
     transition: all .2s ease-in-out;
 }
