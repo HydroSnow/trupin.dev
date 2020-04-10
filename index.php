@@ -80,7 +80,7 @@
 			<?php } ?>
 		</div>
 		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
-		<img style="width:250px;" src="/assets/hy.png" alt="Logo Alexis Trupin" />
+		<img style="width:250px; margin-bottom:24px;" src="/assets/hy.png" alt="Logo Alexis Trupin" />
 		<h1>Alexis Trupin</h1>
 		<a href="#1">
 		    <img style="width:75px;" src="/assets/arrow.png" alt="Vers le bas" />
