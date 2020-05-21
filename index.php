@@ -1,10 +1,3 @@
-<?php // birthday computing
-	$birth = strtotime("2001-09-12 17:13:00");
-	$now = strtotime(date('Y-m-d H:i:s'));
-	$age = floor(($now - $birth) / (365 * 60 * 60 * 24));
-	$description = "Bonjour ! J'ai " . $age . " ans et je suis développeur.";
-?>
-
 <?php // copyright year computing
 	$start_year = "2019";
 	$current_year = date("Y");
@@ -49,7 +42,7 @@
 	<title>Accueil | Alexis Trupin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="<?= $description ?>" />
+	<meta name="description" content="<?= Étudiant en Développement ?>" />
 	<meta name="theme-color" content="#01021b" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -82,13 +75,14 @@
 		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
 		<img style="width:250px; margin-bottom:24px;" src="/assets/hy.png" alt="Logo Alexis Trupin" />
 		<h1>Alexis Trupin</h1>
+		<h2>Étudiant en Développement</h2>
 		<a href="#1">
 		    <img style="width:75px;" src="/assets/arrow.png" alt="Vers le bas" />
 		</a>
 	</header>
 
 	<div class="black" id="1">
-		<h2><?= $description ?></h2>
+		<h2>Bonjour !</h2>
 	</div>
 
 	<section>
