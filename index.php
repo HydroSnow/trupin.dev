@@ -42,7 +42,7 @@
 	<title>Accueil | Alexis Trupin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="<?= Étudiant en Développement ?>" />
+	<meta name="description" content="Étudiant en Développement" />
 	<meta name="theme-color" content="#01021b" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -73,7 +73,7 @@
 			<?php } ?>
 		</div>
 		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
-		<img style="width:250px; margin-bottom:24px;" src="/assets/hy.png" alt="Logo Alexis Trupin" />
+		<img style="width:250px; margin-bottom:24px;" src="/assets/moi.jpg" alt="Logo Alexis Trupin" />
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
 		<a href="#1">
@@ -82,7 +82,7 @@
 	</header>
 
 	<div class="black" id="1">
-		<h2>Bonjour !</h2>
+		<h3>Bonjour !</h3>
 	</div>
 
 	<section>
