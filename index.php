@@ -111,7 +111,7 @@
 			</a>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/cv-back.jpg');">
-			<a href="/CV_Trupin_V3_NA.pdf">
+			<a href="/CV-Alexis-Trupin.pdf">
 				<img src="/assets/cardboard/cv.png" alt="Icône CV" />
 				<div>
 					<h3>Mon CV<h3>
