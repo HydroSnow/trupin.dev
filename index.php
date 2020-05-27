@@ -45,7 +45,7 @@
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?version=<?= $ASSETS_VER ?>" />
 	<?php if ($particles) { ?>
-		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?version=<?= $ASSETS_VER ?>" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?version=<?= $ASSETS_VER ?>" />
 	<?php } ?>
 </head>
 
@@ -53,23 +53,23 @@
 	<header style="background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?version=<?= $ASSETS_VER ?>');">
 		<div id="particles-switch">
 			<?php if ($particles) { ?>
-				<p><a id="disable-particles" href="#">Désactiver les particules</a></p>
-				<script>
-					document.getElementById("disable-particles").onclick = function() {
-						document.cookie = "particles=0";
-						document.location.reload(false);
-						return false;
-					}
-				</script>
+			<p><a id="disable-particles" href="#">Désactiver les particules</a></p>
+			<script>
+				document.getElementById("disable-particles").onclick = function () {
+					document.cookie = "particles=0";
+					document.location.reload(false);
+					return false;
+				}
+			</script>
 			<?php } else { ?>
-				<p><a id="enable-particles" href="#">Activer les particules</a></p>
-				<script>
-					document.getElementById("enable-particles").onclick = function() {
-						document.cookie = "particles=1";
-						document.location.reload(false);
-						return false;
-					}
-				</script>
+			<p><a id="enable-particles" href="#">Activer les particules</a></p>
+			<script>
+				document.getElementById("enable-particles").onclick = function () {
+					document.cookie = "particles=1";
+					document.location.reload(false);
+					return false;
+				}
+			</script>
 			<?php } ?>
 		</div>
 		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
@@ -116,12 +116,12 @@
 	</footer>
 
 	<?php if ($particles) { ?>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
-		<script>
-			particlesJS.load('particles', '/assets/particles.json', async function() {
-				console.log('callback - particles.js config loaded');
-			});
-		</script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
+	<script>
+		particlesJS.load('particles', '/assets/particles.json', async function () {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>
 	<?php } ?>
 </body>
 
