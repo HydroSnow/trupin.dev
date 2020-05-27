@@ -75,12 +75,10 @@
 		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<a href="#1">
-		    <img class="arrow" style="width:75px;" src="/assets/arrow.png?version=<?= $ASSETS_VER ?>" alt="Vers le bas" />
-		</a>
+		<img class="arrow" style="width:75px;" src="/assets/arrow.png?version=<?= $ASSETS_VER ?>" alt="Vers le bas" />
 	</header>
 
-	<div class="black" id="1">
+	<div class="black">
 		<h3>Bonjour ! Voici mon CV.</h3>
 		<p><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
