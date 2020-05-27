@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /assets/
-Disallow: /vendor/
 Disallow: /.gitignore
 Disallow: /.git/
 Disallow: /ip.php
