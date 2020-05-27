@@ -84,7 +84,7 @@
 
 	<div style="padding: 1em 0;">
 		<div style="overflow-x: auto;">
-			<img src="/assets/cv/CV_Trupin_V3_NA.png">
+			<img src="/assets/cv/CV_Trupin_V3_NA.png" alt="Mon CV">
 		</div>
 		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
