@@ -77,7 +77,8 @@
 	</header>
 
 	<div class="black" id="1">
-		<h3>Bonjour !</h3>
+		<h3>Bonjour ! Voici mon CV.</h3>
+		<p><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
 
 	<div style="overflow-x: auto;">
