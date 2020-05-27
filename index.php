@@ -50,7 +50,7 @@
 </head>
 
 <body>
-	<header>
+	<header style="background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?version=<?= $ASSETS_VER ?>');">
 		<div id="particles-switch">
 			<?php if ($particles) { ?>
 				<p><a id="disable-particles" href="#">Désactiver les particules</a></p>
@@ -134,7 +134,7 @@
 		pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
 
 		// Asynchronous download of PDF
-		var loadingTask = pdfjsLib.getDocument('/assets/CV-Alexis-Trupin.pdf');
+		var loadingTask = pdfjsLib.getDocument('/assets/CV-Alexis-Trupin.pdf?version=<?= $ASSETS_VER ?>');
 		loadingTask.promise.then(function(pdf) {
 			console.log('PDF loaded');
 			
