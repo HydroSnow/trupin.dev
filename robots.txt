@@ -1,8 +1,7 @@
 User-agent: *
 Disallow: /assets/
-Disallow: /node_modules/
+Disallow: /vendor/
 Disallow: /.gitignore
+Disallow: /.git/
 Disallow: /ip.php
 Disallow: /LICENSE
-Disallow: /package-lock.json
-Disallow: /package.json

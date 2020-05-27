@@ -4,69 +4,10 @@ html {
 
 body {
     margin: 0;
-
     background-color: #222;
-
     text-align: center;
     color: #FFF;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-
-.black {
-    padding: 2em;
-
-    background-color: black;
-}
-
-h1 {
-    margin: 0;
-    font-size: 5rem;
-    font-weight: bold;
-}
-
-h2 {
-    margin: 0;
-    margin-bottom: 16px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-h3 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: lighter;
-}
-
-h3 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: normal;
-}
-
-h4 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: normal;
-}
-
-p {
-    margin: 0;
-}
-
-a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    color: #CCF;
-    text-decoration: none;
-}
-
-#particles-switch {
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 header {
@@ -90,6 +31,60 @@ header > * {
     z-index: 1;
 }
 
+#particles-switch {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.arrow {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.black {
+    padding: 2em;
+    background-color: black;
+}
+
+h3 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #CCF;
+    text-decoration: none;
+}
+
 section {
     display: flex;
     flex-direction: row;
@@ -108,7 +103,7 @@ section {
     background-size: cover;
 }
 
-.cardboard > a {
+.cardboard > .cb-cont {
     height: 100%;
     width: 100%;
 
@@ -117,18 +112,12 @@ section {
 
     display: block;
 
-    background-color: #0009;
+    background-color: #000B;
     color: #FFF;
-
-    transition: all .2s ease-in-out;
 }
 
-.cardboard > a:hover {
-    background-color: #000D;
-}
-
-.cardboard > a > img {
+.cardboard > .cb-cont > img {
     margin-top: 8px;
-    margin-bottom: 16px;
-    width: 100px;
+    margin-bottom: 8px;
+    width: 64px;
 }
