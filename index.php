@@ -85,26 +85,26 @@
 		<canvas id="pdf-canvas"></canvas>
 	</div>
 
-	<section>
+	<div class="cardboard-container">
 		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg');">
-			<div class="cb-cont">
+			<div class="cardboard-content">
 				<img src="/assets/cardboard/github.png" alt="Logo GitHub" />
 				<h4><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h4>
 			</div>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg');">
-			<div class="cb-cont">
+			<div class="cardboard-content">
 				<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
 				<h4>trupin.alexis@gmail.com</h4>
 			</div>
 		</div>
 		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg');">
-			<div class="cb-cont">
+			<div class="cardboard-content">
 				<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
 				<h4><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h4>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<footer class="black">
 		<h3>&copy; 2019, Alexis Trupin</a></h3>

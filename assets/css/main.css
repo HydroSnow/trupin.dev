@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background-image: linear-gradient(#0007, #0007), url('/assets/snow-village.jpg');
+    background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg');
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
@@ -37,42 +37,28 @@ header > * {
     left: 10px;
 }
 
-h1 {
+h1, h2, h3, h4, p {
     margin: 0;
-    font-size: 5rem;
+}
+
+h1 {
+    font-size: 72px;
     font-weight: bold;
 }
 
 h2 {
-    margin: 0;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: lighter;
 }
 
-.arrow {
-    margin: 0;
-    margin-top: 16px;
-}
-
-.black {
-    padding: 2em;
-    background-color: black;
-}
-
 h3 {
-    margin: 0;
     font-size: 32px;
     font-weight: lighter;
 }
 
 h4 {
-    margin: 0;
     font-size: 24px;
     font-weight: normal;
-}
-
-p {
-    margin: 0;
 }
 
 a {
@@ -85,7 +71,17 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-section {
+.arrow {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.black {
+    padding: 2em;
+    background-color: black;
+}
+
+.cardboard-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -103,7 +99,7 @@ section {
     background-size: cover;
 }
 
-.cardboard > .cb-cont {
+.cardboard-content {
     height: 100%;
     width: 100%;
 
@@ -116,7 +112,7 @@ section {
     color: #FFF;
 }
 
-.cardboard > .cb-cont > img {
+.cardboard-content > img {
     margin-top: 8px;
     margin-bottom: 8px;
     width: 64px;
