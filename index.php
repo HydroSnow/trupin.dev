@@ -30,7 +30,7 @@
 ?>
 
 <?php // assets version for cache cancel
-	$ASSETS_VER = 2;
+	$ASSETS_VER = 3;
 ?>
 
 <!doctype html>
@@ -82,9 +82,11 @@
 		<h3>Bonjour !</h3>
 	</div>
 
-	<div class="pdf-div">
-		<canvas id="pdf-canvas"></canvas>
-		<p style="margin-top: 12px;"><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
+	<div style="padding: 1em 0;">
+		<div style="overflow-x: auto;">
+			<img src="/assets/cv/CV_Trupin_V3_NA.png">
+		</div>
+		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
 
 	<div class="cardboard-container">
@@ -121,57 +123,6 @@
 			});
 		</script>
 	<?php } ?>
-	
-	<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js" integrity="sha256-J4Z8Fhj2MITUakMQatkqOVdtqodUlwHtQ/ey6fSsudE=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.worker.min.js" integrity="sha256-I4o8kJ5QIxAoP9x72OUugvB1Jjl5trc9XlE2LPJ5o5o=" crossorigin="anonymous"></script>
-	<script>
-		// Loaded via <script> tag, create shortcut to access PDF.js exports.
-		var pdfjsLib = window['pdfjs-dist/build/pdf'];
-
-		// The workerSrc property shall be specified.
-		pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
-
-		// Asynchronous download of PDF
-		var loadingTask = pdfjsLib.getDocument('/assets/CV-Alexis-Trupin.pdf?version=<?= $ASSETS_VER ?>');
-		loadingTask.promise.then(function(pdf) {
-			console.log('PDF loaded');
-			
-			// Fetch the first page
-			var pageNumber = 1;
-			return pdf.getPage(pageNumber)
-		}).then(function(page) {
-			console.log('Page loaded');
-
-			var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-			
-			var scale;
-			if (vw >= 900) {
-				scale = 1.5;
-			} else {
-				scale = 1.25;
-			}
-			var viewport = page.getViewport({ scale: scale });
-
-			// Prepare canvas using PDF page dimensions
-			var canvas = document.getElementById('pdf-canvas');
-			var context = canvas.getContext('2d');
-			canvas.height = viewport.height;
-			canvas.width = viewport.width;
-
-			// Render PDF page into canvas context
-			var renderContext = {
-				canvasContext: context,
-				viewport: viewport
-			};
-			var renderTask = page.render(renderContext);
-			return renderTask.promise;
-		}).then(function () {
-			console.log('Page rendered');
-		}).catch(function (reason) {
-			// PDF loading error
-			console.error(reason);
-		});
-	</script>
 </body>
 
 </html>

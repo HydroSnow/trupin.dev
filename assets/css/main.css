@@ -80,11 +80,6 @@ a:hover, a:focus {
     background-color: black;
 }
 
-.pdf-div {
-    padding: 1em 0;
-    overflow-x: auto;
-}
-
 .cardboard-container {
     display: flex;
     flex-direction: row;
