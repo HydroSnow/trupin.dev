@@ -139,9 +139,16 @@
 			return pdf.getPage(pageNumber)
 		}).then(function(page) {
 			console.log('Page loaded');
+
+			var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 			
-			var scale = 1.5;
-			var viewport = page.getViewport({scale: scale});
+			var scale;
+			if (vw >= 900) {
+				scale = 1.5;
+			} else {
+				scale = 1.25;
+			}
+			var viewport = page.getViewport({ scale: scale });
 
 			// Prepare canvas using PDF page dimensions
 			var canvas = document.getElementById('pdf-canvas');
