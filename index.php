@@ -29,6 +29,10 @@
 	}
 ?>
 
+<?php // assets version for cache cancel
+	$ASSETS_VER = 2;
+?>
+
 <!doctype html>
 <html lang="fr-FR">
 
@@ -39,9 +43,9 @@
 	<meta name="description" content="Étudiant en Développement" />
 	<meta name="theme-color" content="#01021b" />
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?version=<?= $ASSETS_VER ?>" />
 	<?php if ($particles) { ?>
-		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?version=<?= $ASSETS_VER ?>" />
 	<?php } ?>
 </head>
 
@@ -72,7 +76,7 @@
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
 		<a href="#1">
-		    <img class="arrow" style="width:75px;" src="/assets/arrow.png" alt="Vers le bas" />
+		    <img class="arrow" style="width:75px;" src="/assets/arrow.png?version=<?= $ASSETS_VER ?>" alt="Vers le bas" />
 		</a>
 	</header>
 
@@ -86,21 +90,21 @@
 	</div>
 
 	<div class="cardboard-container">
-		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg?version=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/github.png" alt="Logo GitHub" />
+				<img src="/assets/cardboard/github.png?version=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
 				<h4><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h4>
 			</div>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg?version=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/mail.png" alt="Logo GitHub" />
+				<img src="/assets/cardboard/mail.png?version=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
 				<h4>trupin.alexis@gmail.com</h4>
 			</div>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg?version=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
+				<img src="/assets/cardboard/linkedin.png?version=<?= $ASSETS_VER ?>" alt="Logo LinkedIn" />
 				<h4><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h4>
 			</div>
 		</div>
