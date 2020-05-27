@@ -82,6 +82,7 @@ a:hover, a:focus {
 }
 
 .pdf-div {
+    padding: 1em 0;
     overflow-x: auto;
 }
 
