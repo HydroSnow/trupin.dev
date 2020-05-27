@@ -79,12 +79,12 @@
 	</header>
 
 	<div class="black">
-		<h3>Bonjour ! Voici mon CV.</h3>
-		<p><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
+		<h3>Bonjour !</h3>
 	</div>
 
 	<div class="pdf-div">
 		<canvas id="pdf-canvas"></canvas>
+		<p style="margin-top: 12px;"><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
 
 	<div class="cardboard-container">
