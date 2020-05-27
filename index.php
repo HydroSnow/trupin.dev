@@ -111,7 +111,7 @@
 	</div>
 
 	<footer class="black">
-		<h3>&copy; 2019, Alexis Trupin</a></h3>
+		<h3>&copy; 2019, Alexis Trupin</h3>
 		<p><a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a></p>
 	</footer>
 
