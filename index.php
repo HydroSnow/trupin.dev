@@ -81,7 +81,7 @@
 		<p><a href="/assets/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
 	</div>
 
-	<div style="overflow-x: auto;">
+	<div class="pdf-div">
 		<canvas id="pdf-canvas"></canvas>
 	</div>
 
