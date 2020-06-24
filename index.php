@@ -8,24 +8,10 @@
 ?>
 
 <?php // disable particles
-	if (isset($_COOKIE["particles"]) == false) {
-		if ($mobile == true) {
-			setcookie("particles", 0);
-			$particles = false;
-			echo("<!-- auto-detect: particles disabled -->");
-		} else {
-			setcookie("particles", 1);
-			$particles = true;
-			echo("<!-- auto-detect: particles enabled -->");
-		}
+	if ($mobile == true) {
+		$particles = false;
 	} else {
-		if ($_COOKIE["particles"] == 1) {
-			$particles = true;
-			echo("<!-- particles enabled -->");
-		} else {
-			$particles = false;
-			echo("<!-- particles disabled -->");
-		}
+		$particles = true;
 	}
 ?>
 
@@ -37,53 +23,26 @@
 <html lang="fr-FR">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170081437-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-170081437-1');
-	</script>
 	<title>Alexis Trupin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="Étudiant en Développement" />
 	<meta name="theme-color" content="#01021b" />
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?version=<?= $ASSETS_VER ?>" />
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=<?= $ASSETS_VER ?>" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=<?= $ASSETS_VER ?>" />
 	<?php if ($particles) { ?>
-	<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?version=<?= $ASSETS_VER ?>" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?v=<?= $ASSETS_VER ?>" />
 	<?php } ?>
 </head>
 
 <body>
-	<header style="background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?version=<?= $ASSETS_VER ?>');">
-		<div id="particles-switch">
-			<?php if ($particles) { ?>
-			<p><a id="disable-particles" href="#">Désactiver les particules</a></p>
-			<script>
-				document.getElementById("disable-particles").onclick = function () {
-					document.cookie = "particles=0";
-					document.location.reload(false);
-					return false;
-				}
-			</script>
-			<?php } else { ?>
-			<p><a id="enable-particles" href="#">Activer les particules</a></p>
-			<script>
-				document.getElementById("enable-particles").onclick = function () {
-					document.cookie = "particles=1";
-					document.location.reload(false);
-					return false;
-				}
-			</script>
-			<?php } ?>
-		</div>
-		<?php if ($particles) { ?> <div id="particles"></div> <?php } ?>
+	<header style="background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?v=<?= $ASSETS_VER ?>');">
+		<?php if ($particles) { ?>
+			<div id="particles"></div>
+		<?php } ?>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<img class="arrow" style="width:75px;" src="/assets/arrow.png?version=<?= $ASSETS_VER ?>" alt="Vers le bas" />
+		<img class="arrow" style="width:75px;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" />
 	</header>
 
 	<div class="black">
@@ -92,27 +51,27 @@
 
 	<div style="padding: 1em 0;">
 		<div style="overflow-x: auto;">
-			<img src="/assets/cv/CV_Trupin_V3_NA.png" alt="Mon CV">
+			<img src="/assets/cv/CV_Trupin_V3_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
-		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf">Télécharger le CV</a></p>
+		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf?v=<?= $ASSETS_VER ?>">Télécharger le CV</a></p>
 	</div>
 
 	<div class="cardboard-container">
-		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg?version=<?= $ASSETS_VER ?>');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg?v=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/github.png?version=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
+				<img src="/assets/cardboard/github.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
 				<h4><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h4>
 			</div>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg?version=<?= $ASSETS_VER ?>');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg?v=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/mail.png?version=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
+				<img src="/assets/cardboard/mail.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
 				<h4>trupin.alexis@gmail.com</h4>
 			</div>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg?version=<?= $ASSETS_VER ?>');">
+		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg?v=<?= $ASSETS_VER ?>');">
 			<div class="cardboard-content">
-				<img src="/assets/cardboard/linkedin.png?version=<?= $ASSETS_VER ?>" alt="Logo LinkedIn" />
+				<img src="/assets/cardboard/linkedin.png?v=<?= $ASSETS_VER ?>" alt="Logo LinkedIn" />
 				<h4><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h4>
 			</div>
 		</div>
@@ -124,12 +83,12 @@
 	</footer>
 
 	<?php if ($particles) { ?>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
-	<script>
-		particlesJS.load('particles', '/assets/particles.json', async function () {
-			console.log('callback - particles.js config loaded');
-		});
-	</script>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
+		<script>
+			particlesJS.load('particles', '/assets/particles.json?v=<?= $ASSETS_VER ?>', async function () {
+				console.log('callback - particles.js config loaded');
+			});
+		</script>
 	<?php } ?>
 </body>
 
