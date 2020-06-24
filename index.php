@@ -16,7 +16,7 @@
 ?>
 
 <?php // assets version for cache cancel
-	$ASSETS_VER = 3;
+	$ASSETS_VER = 4;
 ?>
 
 <!doctype html>
@@ -28,7 +28,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="Étudiant en Développement" />
 	<meta name="theme-color" content="#01021b" />
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=<?= $ASSETS_VER ?>" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=<?= $ASSETS_VER ?>" />
 	<?php if ($particles) { ?>
 		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?v=<?= $ASSETS_VER ?>" />
@@ -42,44 +41,44 @@
 		<?php } ?>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<img class="arrow" style="width:75px;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" />
+		<img class="arrow" style="width:75px; margin-top:16px;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" />
 	</header>
 
-	<div class="black">
-		<h3>Bonjour !</h3>
+	<div style="padding:2em;">
+		<h2>Bonjour !</h2>
 	</div>
 
-	<div style="padding: 1em 0;">
+	<div style="padding: 1em 0; background-color: #222;">
 		<div style="overflow-x: auto;">
 			<img src="/assets/cv/CV_Trupin_V3_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
 		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf?v=<?= $ASSETS_VER ?>">Télécharger le CV</a></p>
 	</div>
 
-	<div class="cardboard-container">
-		<div class="cardboard" style="background-image: url('/assets/cardboard/github-back.jpg?v=<?= $ASSETS_VER ?>');">
-			<div class="cardboard-content">
-				<img src="/assets/cardboard/github.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
-				<h4><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h4>
-			</div>
+	<div class="container">
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('/assets/cardboard/github-back.jpg?v=<?= $ASSETS_VER ?>');">
+			<img src="/assets/cardboard/github.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
+			<h3><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h3>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/mail-back.jpg?v=<?= $ASSETS_VER ?>');">
-			<div class="cardboard-content">
-				<img src="/assets/cardboard/mail.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
-				<h4>trupin.alexis@gmail.com</h4>
-			</div>
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('/assets/cardboard/mail-back.jpg?v=<?= $ASSETS_VER ?>');">
+			<img src="/assets/cardboard/mail.png?v=<?= $ASSETS_VER ?>" alt="Logo GitHub" />
+			<h3>trupin.alexis@gmail.com</h3>
 		</div>
-		<div class="cardboard" style="background-image: url('/assets/cardboard/linkedin-back.jpg?v=<?= $ASSETS_VER ?>');">
-			<div class="cardboard-content">
-				<img src="/assets/cardboard/linkedin.png?v=<?= $ASSETS_VER ?>" alt="Logo LinkedIn" />
-				<h4><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h4>
-			</div>
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('/assets/cardboard/linkedin-back.jpg?v=<?= $ASSETS_VER ?>');">
+			<img src="/assets/cardboard/linkedin.png?v=<?= $ASSETS_VER ?>" alt="Logo LinkedIn" />
+			<h3><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h3>
 		</div>
 	</div>
 
-	<footer class="black">
-		<h3>&copy; 2019, Alexis Trupin</h3>
-		<p><a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a></p>
+	<footer class="container">
+		<div class="footer">
+			<h2>&copy; 2019, Alexis Trupin</h2>
+			<p><a href="https://github.com/HydroSnow/trupin.dev">Code source : github.com/HydroSnow/trupin.dev</a></p>
+		</div>
+		<div class="footer">
+			<h2>Hébergeur</h2>
+			<p><a href="https://www.ovh.com/fr/">OVH SAS : 2 rue Kellermann, 59100 Roubaix, France</a></p>
+		</div>
 	</footer>
 
 	<?php if ($particles) { ?>
