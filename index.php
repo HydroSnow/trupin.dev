@@ -89,7 +89,7 @@
 	</script>
 	<?php if ($particles) { ?>
 		<script src="/node_modules/particles.js/particles.js"></script>
-		<script async>
+		<script>
 			particlesJS.load('particles', '/assets/particles.json?v=<?= $ASSETS_VER ?>', async function () {
 				console.log('callback - particles.js config loaded');
 			});
