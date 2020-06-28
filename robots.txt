@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /assets/
+Disallow: /node_modules/
 Disallow: /.gitignore
 Disallow: /.git/
 Disallow: /ip.php

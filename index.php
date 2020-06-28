@@ -88,7 +88,7 @@
 		}
 	</script>
 	<?php if ($particles) { ?>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
+		<script src="/node_modules/particles.js/particles.js"></script>
 		<script async>
 			particlesJS.load('particles', '/assets/particles.json?v=<?= $ASSETS_VER ?>', async function () {
 				console.log('callback - particles.js config loaded');
