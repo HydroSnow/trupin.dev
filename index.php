@@ -41,10 +41,10 @@
 		<?php } ?>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<img class="arrow" style="width:75px; margin-top:16px;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" />
+		<img class="arrow" style="width:75px; margin-top:16px; cursor:pointer;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" onclick="bonjour();" />
 	</header>
 
-	<div style="padding:2em;">
+	<div id="bonjour" style="padding:2em;">
 		<h2>Bonjour !</h2>
 	</div>
 
@@ -81,6 +81,12 @@
 		</div>
 	</footer>
 
+	<script>
+		function bonjour() {
+			let element = document.getElementById('bonjour');
+			element.scrollIntoView(true);
+		}
+	</script>
 	<?php if ($particles) { ?>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg=" crossorigin="anonymous"></script>
 		<script>
