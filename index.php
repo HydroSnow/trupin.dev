@@ -50,9 +50,9 @@
 
 	<div style="padding: 1em 0; background-color: #222;">
 		<div style="overflow-x: auto;">
-			<img src="/assets/cv/CV_Trupin_V3_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
+			<img src="/assets/cv/CV_Alexis_Trupin_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
-		<p style="margin-top: 12px;"><a href="/assets/cv/CV-Alexis-Trupin.pdf?v=<?= $ASSETS_VER ?>">Télécharger le CV</a></p>
+		<p style="margin-top: 12px;"><a href="/assets/cv/CV_Alexis_Trupin_NA.pdf?v=<?= $ASSETS_VER ?>">Télécharger le CV</a></p>
 	</div>
 
 	<div class="container">
