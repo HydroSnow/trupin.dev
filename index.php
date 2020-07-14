@@ -99,7 +99,7 @@
 		}
 
 		.cardboard {
-			padding: 48px;
+			padding: 48px 24px;
 
 			flex-grow: 1;
 
