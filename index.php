@@ -53,12 +53,7 @@
 			justify-content: center;
 
 			background-position: center center;
-			-webkit-background-size: cover;
 			background-size: cover;
-		}
-
-		header>* {
-			z-index: 1;
 		}
 
 		h1, h2, h3, h4, p {
@@ -104,7 +99,6 @@
 			flex-grow: 1;
 
 			background-position: center center;
-			-webkit-background-size: cover;
 			background-size: cover;
 		}
 
@@ -118,11 +112,11 @@
 			padding: 16px;
 		}
 
-		footer>* {
+		footer > * {
 			margin: 16px;
 		}
 
-		.gandalf, .gandalf>a {
+		.gandalf, .gandalf > a {
 			color: #aaa;
 		}
 	</style>
@@ -131,6 +125,10 @@
 			@keyframes fadein {
 				from { opacity: 0; }
 				to { opacity: 1; }
+			}
+
+			header > * {
+				z-index: 1;
 			}
 
 			#particles {
@@ -142,14 +140,6 @@
 				z-index: 0;
 
 				animation: fadein 10s;
-				/* Safari, Chrome and Opera > 12.1 */
-				-webkit-animation: fadein 10s;
-				/* Firefox < 16 */
-				-moz-animation: fadein 10s;
-				/* Internet Explorer */
-				-ms-animation: fadein 10s;
-				/* Opera < 12.1 */
-				-o-animation: fadein 10s;
 			}
 		</style>
 	<?php } ?>
