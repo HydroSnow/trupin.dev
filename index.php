@@ -44,7 +44,7 @@
 		header {
 			min-height: 100vh;
 
-			padding: 4em 1em;
+			padding: 64px 16px;
 			box-sizing: border-box;
 
 			display: flex;
@@ -99,7 +99,7 @@
 		}
 
 		.cardboard {
-			padding: 2em;
+			padding: 48px;
 
 			flex-grow: 1;
 
@@ -114,8 +114,12 @@
 			width: 64px;
 		}
 
+		footer {
+			padding: 16px;
+		}
+
 		footer>* {
-			margin: 20px;
+			margin: 16px;
 		}
 
 		.gandalf, .gandalf>a {
@@ -161,11 +165,11 @@
 		<img class="arrow" style="width:75px; margin-top:16px; cursor:pointer;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" onclick="bonjour();" />
 	</header>
 
-	<div id="bonjour" style="padding:2em;">
+	<div id="bonjour" style="padding:32px;">
 		<h2>Bonjour !</h2>
 	</div>
 
-	<div style="padding: 2em 0; background-color: #222;">
+	<div style="padding: 32px 0; background-color: #222;">
 		<div style="overflow-x: auto;">
 			<img src="/assets/cv/CV_Alexis_Trupin_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
