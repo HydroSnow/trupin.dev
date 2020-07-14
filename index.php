@@ -44,7 +44,7 @@
 		header {
 			min-height: 100vh;
 
-			padding: 64px 16px;
+			padding: 64px 32px;
 			box-sizing: border-box;
 
 			display: flex;
