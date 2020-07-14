@@ -143,7 +143,6 @@
 			}
 		</style>
 	<?php } ?>
-	<script src="/node_modules/lazysizes/lazysizes.min.js" async></script>
 </head>
 
 <body>
@@ -162,7 +161,7 @@
 
 	<div style="padding: 32px 0; background-color: #222;">
 		<div style="overflow-x: auto;">
-			<img src="/assets/cv/CV_Alexis_Trupin_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV" style="width:777px;" class="lazyload">
+			<img src="/assets/cv/CV_Alexis_Trupin_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
 		<p style="margin-top: 12px;"><a href="/assets/cv/CV_Alexis_Trupin_NA.pdf?v=<?= $ASSETS_VER ?>">Télécharger le CV</a></p>
 	</div>
