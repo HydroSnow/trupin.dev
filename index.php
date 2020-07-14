@@ -28,9 +28,126 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="Étudiant en Développement" />
 	<meta name="theme-color" content="#01021b" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=<?= $ASSETS_VER ?>" />
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			margin: 0;
+			text-align: center;
+			color: #FFF;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			background-color: black;
+		}
+
+		header {
+			min-height: 100vh;
+
+			padding: 4em 1em;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			background-position: center center;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+
+		header>* {
+			z-index: 1;
+		}
+
+		h1, h2, h3, h4, p {
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 72px;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-size: 32px;
+			font-weight: lighter;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-weight: normal;
+		}
+
+		a {
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		a:hover, a:focus {
+			color: #CCF;
+			text-decoration: none;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.cardboard {
+			padding: 2em;
+
+			flex-grow: 1;
+
+			background-position: center center;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+
+		.cardboard>img {
+			margin-top: 8px;
+			margin-bottom: 8px;
+			width: 64px;
+		}
+
+		footer>* {
+			margin: 20px;
+		}
+
+		.gandalf, .gandalf>a {
+			color: #aaa;
+		}
+	</style>
 	<?php if ($particles) { ?>
-		<link rel="stylesheet" type="text/css" href="/assets/css/particles.css?v=<?= $ASSETS_VER ?>" />
+		<style>
+			@keyframes fadein {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+
+			#particles {
+				position: absolute;
+
+				width: 100%;
+				height: 100%;
+
+				z-index: 0;
+
+				animation: fadein 10s;
+				/* Safari, Chrome and Opera > 12.1 */
+				-webkit-animation: fadein 10s;
+				/* Firefox < 16 */
+				-moz-animation: fadein 10s;
+				/* Internet Explorer */
+				-ms-animation: fadein 10s;
+				/* Opera < 12.1 */
+				-o-animation: fadein 10s;
+			}
+		</style>
 	<?php } ?>
 </head>
 
@@ -48,7 +165,7 @@
 		<h2>Bonjour !</h2>
 	</div>
 
-	<div style="padding: 1em 0; background-color: #222;">
+	<div style="padding: 2em 0; background-color: #222;">
 		<div style="overflow-x: auto;">
 			<img src="/assets/cv/CV_Alexis_Trupin_NA.png?v=<?= $ASSETS_VER ?>" alt="Mon CV">
 		</div>
@@ -70,27 +187,23 @@
 		</div>
 	</div>
 
-	<footer class="container">
-		<div class="footer">
-			<h2>&copy; 2019, Alexis Trupin</h2>
-			<p><a href="https://github.com/HydroSnow/trupin.dev">Code source : github.com/HydroSnow/trupin.dev</a></p>
-		</div>
-		<div class="footer">
-			<h2>Hébergeur</h2>
-			<p><a href="https://www.ovh.com/fr/">OVH SAS : 2 rue Kellermann, 59100 Roubaix, France</a></p>
-		</div>
+	<footer>
+		<h2>&copy; 2019, Alexis Trupin</h2>
+		<p class="gandalf">Tous droits réservés<br /> <a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a> </p>
+		<p class="gandalf">Hébergeur : <a href="https://www.ovh.com/fr/">OVH SAS</a><br /> 2 rue Kellermann, 59100 Roubaix, France</p>
 	</footer>
 
 	<script>
+		const element = document.getElementById('bonjour');
 		function bonjour() {
-			let element = document.getElementById('bonjour');
 			element.scrollIntoView(true);
 		}
 	</script>
+
 	<?php if ($particles) { ?>
 		<script src="/node_modules/particles.js/particles.js"></script>
 		<script>
-			particlesJS.load('particles', '/assets/particles.json?v=<?= $ASSETS_VER ?>', async function () {
+			particlesJS.load('particles', '/assets/particles.json?v=<?= $ASSETS_VER ?>', function() {
 				console.log('callback - particles.js config loaded');
 			});
 		</script>
