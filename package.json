@@ -1,6 +1,7 @@
 {
     "private": true,
     "dependencies": {
+        "lazysizes": "^5.2.2",
         "particles.js": "^2.0.0"
     }
 }
