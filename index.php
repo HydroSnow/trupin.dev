@@ -35,11 +35,34 @@
 
 		body {
 			margin: 0;
+
+			color: white;
 			text-align: center;
-			color: #FFF;
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-			background-color: black;
+
+			background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?v=<?= $ASSETS_VER ?>');
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
 		}
+
+		<?php if ($particles) { ?>
+			@keyframes fadein {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+
+			#particles {
+				position: fixed;
+
+				width: 100%;
+				height: 100%;
+
+				z-index: -1;
+
+				animation: fadein 10s;
+			}
+		<?php } ?>
 
 		header {
 			min-height: 100vh;
@@ -51,9 +74,12 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+		}
 
-			background-position: center center;
-			background-size: cover;
+		.arrow {
+			width: 75px;
+			margin-top: 16px;
+			cursor: pointer;
 		}
 
 		h1, h2, h3, h4, p {
@@ -76,13 +102,17 @@
 		}
 
 		a {
-			color: #FFF;
+			color: white;
 			text-decoration: none;
 		}
 
 		a:hover, a:focus {
 			color: #CCF;
 			text-decoration: none;
+		}
+
+		.black {
+			background-color: black;
 		}
 
 		.container {
@@ -102,7 +132,7 @@
 			background-size: cover;
 		}
 
-		.cardboard>img {
+		.cardboard > img {
 			margin-top: 8px;
 			margin-bottom: 8px;
 			width: 64px;
@@ -120,42 +150,20 @@
 			color: #aaa;
 		}
 	</style>
-	<?php if ($particles) { ?>
-		<style>
-			@keyframes fadein {
-				from { opacity: 0; }
-				to { opacity: 1; }
-			}
-
-			header > * {
-				z-index: 1;
-			}
-
-			#particles {
-				position: absolute;
-
-				width: 100%;
-				height: 100%;
-
-				z-index: 0;
-
-				animation: fadein 10s;
-			}
-		</style>
-	<?php } ?>
 </head>
 
 <body>
-	<header style="background-image: linear-gradient(#0008, #0008), url('/assets/snow-village.jpg?v=<?= $ASSETS_VER ?>');">
-		<?php if ($particles) { ?>
-			<div id="particles"></div>
-		<?php } ?>
+	<?php if ($particles) { ?>
+		<div id="particles"></div>
+	<?php } ?>
+
+	<header>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<img class="arrow" style="width:75px; margin-top:16px; cursor:pointer;" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" onclick="bonjour();" />
+		<img class="arrow" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" onclick="bonjour();" />
 	</header>
 
-	<div id="bonjour" style="padding:32px;">
+	<div id="bonjour" class="black" style="padding:32px;">
 		<h2>Bonjour !</h2>
 	</div>
 
@@ -181,7 +189,7 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class="black">
 		<h2>&copy; 2019, Alexis Trupin</h2>
 		<p class="gandalf">Tous droits réservés<br /> <a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a> </p>
 		<p class="gandalf">Hébergeur : <a href="https://www.ovh.com/fr/">OVH SAS</a><br /> 2 rue Kellermann, 59100 Roubaix, France</p>
