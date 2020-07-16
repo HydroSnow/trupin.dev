@@ -16,7 +16,7 @@
 ?>
 
 <?php // assets version for cache cancel
-	$ASSETS_VER = 5;
+	$ASSETS_VER = 7;
 ?>
 
 <!doctype html>
