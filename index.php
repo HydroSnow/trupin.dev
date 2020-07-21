@@ -16,7 +16,7 @@
 ?>
 
 <?php // assets version for cache cancel
-	$ASSETS_VER = 7;
+	$ASSETS_VER = 8;
 ?>
 
 <!doctype html>
@@ -82,7 +82,11 @@
 			cursor: pointer;
 		}
 
-		h1, h2, h3, h4, p {
+		h1,
+		h2,
+		h3,
+		h4,
+		p {
 			margin: 0;
 		}
 
@@ -106,8 +110,9 @@
 			text-decoration: none;
 		}
 
-		a:hover, a:focus {
-			color: #CCF;
+		a:hover,
+		a:focus {
+			color: #ccf;
 			text-decoration: none;
 		}
 
@@ -146,8 +151,14 @@
 			margin: 16px;
 		}
 
-		.gandalf, .gandalf > a {
+		.gray,
+		.gray > a {
 			color: #aaa;
+		}
+
+		.gray > a:hover,
+		.gray > a:focus {
+			color: #ccf;
 		}
 	</style>
 </head>
@@ -160,7 +171,7 @@
 	<header>
 		<h1>Alexis Trupin</h1>
 		<h2>Étudiant en Développement</h2>
-		<img class="arrow" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" onclick="bonjour();" />
+		<img id="arrow" class="arrow" src="/assets/arrow.png?v=<?= $ASSETS_VER ?>" alt="Vers le bas" />
 	</header>
 
 	<div id="bonjour" class="black" style="padding:32px;">
@@ -191,14 +202,17 @@
 
 	<footer class="black">
 		<h2>&copy; 2019, Alexis Trupin</h2>
-		<p class="gandalf">Tous droits réservés<br /> <a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a> </p>
-		<p class="gandalf">Hébergeur : <a href="https://www.ovh.com/fr/">OVH SAS</a><br /> 2 rue Kellermann, 59100 Roubaix, France</p>
+		<p class="gray">Tous droits réservés
+			<br /> <a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a> </p>
+		<p class="gray">Hébergeur : <a href="https://www.ovh.com/fr/">OVH SAS</a>
+			<br /> 2 rue Kellermann, 59100 Roubaix, France</p>
 	</footer>
 
 	<script>
-		const element = document.getElementById('bonjour');
-		function bonjour() {
-			element.scrollIntoView(true);
+		const arrow = document.getElementById('arrow');
+		const bonjour = document.getElementById('bonjour');
+		arrow.onclick = function() {
+			bonjour.scrollIntoView(true);
 		}
 	</script>
 
