@@ -228,9 +228,9 @@
 			let md = new MobileDetect(window.navigator.userAgent);
 			let mobile = md.mobile();
 			if (mobile === null) {
-				particles = 'false';
-			} else {
 				particles = 'true';
+			} else {
+				particles = 'false';
 			}
 			window.localStorage.setItem('particles', particles);
 		}
