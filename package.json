@@ -1,6 +1,7 @@
 {
     "private": true,
     "dependencies": {
+        "mobile-detect": "^1.4.4",
         "particles.js": "^2.0.0"
     }
 }

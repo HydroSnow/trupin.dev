@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr-FR">
+
+<head>
+	<title>Alexis Trupin</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Étudiant en Développement" />
+	<meta name="theme-color" content="#000218" />
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			margin: 0;
+
+			color: white;
+			text-align: center;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+			background-image: linear-gradient(#0008, #0008), url('assets/snow-village.jpg');
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		@keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		#particles {
+			position: fixed;
+
+			width: 100%;
+			height: 100%;
+
+			z-index: -1;
+		}
+
+		#toggle-particles {
+			position: absolute;
+			margin: 8px;
+		}
+
+		.pre-fadein {
+			opacity: 0;
+		}
+
+		.fadein {
+			opacity: 1;
+			animation: fadein 10s;
+		}
+
+		header {
+			min-height: 100vh;
+
+			padding: 64px 32px;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#arrow {
+			width: 75px;
+			margin-top: 16px;
+		}
+
+		.js-link {
+			cursor: pointer;
+		}
+
+		#bonjour {
+			padding: 32px;
+		}
+
+		.cv-section {
+			padding: 32px 0;
+			background-color: #222;
+		}
+
+		.cv-container {
+			overflow-x: auto;
+			margin-bottom: 12px;
+		}
+
+		h1,
+		h2,
+		h3,
+		p {
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 72px;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-size: 32px;
+			font-weight: lighter;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-weight: normal;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+			color: #ccf;
+			text-decoration: none;
+		}
+
+		.black {
+			background-color: black;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.cardboard {
+			padding: 48px 24px;
+
+			flex-grow: 1;
+
+			background-position: center center;
+			background-size: cover;
+		}
+
+		.cardboard > img {
+			margin-top: 8px;
+			margin-bottom: 8px;
+			width: 64px;
+		}
+
+		footer {
+			padding: 16px;
+		}
+
+		footer > * {
+			margin: 16px;
+		}
+
+		.gray,
+		.gray > a {
+			color: #aaa;
+		}
+
+		.gray > a:hover,
+		.gray > a:focus {
+			color: #ccf;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="particles" class="pre-fadein"></div>
+	<p id="toggle-particles" class="js-link"></p>
+
+	<header>
+		<h1>Alexis Trupin</h1>
+		<h2>Étudiant en Développement</h2>
+		<img id="arrow" class="js-link" src="assets/arrow.png" alt="Vers le bas" />
+	</header>
+
+	<div id="bonjour" class="black">
+		<h2>Bonjour !</h2>
+	</div>
+
+	<script>
+		const arrow = document.getElementById('arrow');
+		const bonjour = document.getElementById('bonjour');
+		arrow.onclick = function() {
+			bonjour.scrollIntoView(true);
+		}
+	</script>
+
+	<div class="cv-section">
+		<div class="cv-container">
+			<img src="assets/cv/CV_Alexis_Trupin_NA.png" alt="Mon CV">
+		</div>
+		<p><a href="assets/cv/CV_Alexis_Trupin_NA.pdf">Télécharger le CV</a></p>
+	</div>
+
+	<div class="container">
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('assets/cardboard/github-back.jpg');">
+			<img src="assets/cardboard/github.png" alt="Logo GitHub" />
+			<h3><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h3>
+		</div>
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('assets/cardboard/mail-back.jpg');">
+			<img src="assets/cardboard/mail.png" alt="Logo GitHub" />
+			<h3>trupin.alexis@gmail.com</h3>
+		</div>
+		<div class="cardboard" style="background-image: linear-gradient(#000A, #000A), url('assets/cardboard/linkedin-back.jpg');">
+			<img src="assets/cardboard/linkedin.png" alt="Logo LinkedIn" />
+			<h3><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h3>
+		</div>
+	</div>
+
+	<footer class="black">
+		<h2>&copy; 2019, Alexis Trupin</h2>
+		<p class="gray">Tous droits réservés
+			<br /> <a href="https://github.com/HydroSnow/trupin.dev">github.com/HydroSnow/trupin.dev</a> </p>
+		<p class="gray">Hébergeur : <a href="https://www.ovh.com/fr/">OVH SAS</a>
+			<br /> 2 rue Kellermann, 59100 Roubaix, France</p>
+	</footer>
+
+	<script src="node_modules/particles.js/particles.js"></script>
+	<script src="node_modules/mobile-detect/mobile-detect.min.js"></script>
+	<script>
+		let particles = window.localStorage.getItem('particles');
+		if (particles === null) {
+			let md = new MobileDetect(window.navigator.userAgent);
+			let mobile = md.mobile();
+			if (mobile === null) {
+				particles = 'false';
+			} else {
+				particles = 'true';
+			}
+			window.localStorage.setItem('particles', particles);
+		}
+
+		const toggleParticles = document.getElementById('toggle-particles');
+		if (particles === 'true') {
+			toggleParticles.innerText = 'Désactiver les particules';
+			toggleParticles.onclick = function() {
+				window.localStorage.setItem('particles', 'false');
+				document.location.reload(false);
+			}
+			particlesJS.load('particles', 'assets/particles.json', function() {
+				document.getElementById('particles').classList.add('fadein');
+			});
+		} else {
+			toggleParticles.innerText = 'Activer les particules';
+			toggleParticles.onclick = function() {
+				window.localStorage.setItem('particles', 'true');
+				document.location.reload(false);
+			}
+		}
+	</script>
+</body>
+
+</html>
+<!-- t'es moche, petit fouineur -->
