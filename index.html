@@ -131,45 +131,17 @@
 			background-color: black;
 		}
 
-		.container {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
+		.link-holder {
+			margin-top: 32px;
 		}
 
-		.cardboard {
-			padding: 48px 24px;
-
-			flex-grow: 1;
-
-			background-position: center center;
-			background-size: 100%;
-
-    		transition: all 1s;
+		.link {
+			margin: 0 24px;
+			display: inline-block;
 		}
 
-		.cardboard:hover {
-			background-size: 110%;
-		}
-
-		.cardboard > img {
-			margin-top: 8px;
-			margin-bottom: 8px;
-			width: 64px;
-		}
-
-		.github {
-			background-image: url('assets/github-back-dark.jpg');
-		}
-
-		.mail {
-			background-image: url('assets/mail-back-dark.jpg');
-		}
-
-		.linkedin {
-			background-image: url('assets/linkedin-back-dark.jpg');
+		.link > img {
+			width: 48px;
 		}
 
 		footer {
@@ -219,20 +191,19 @@
 			<img src="cv/CV_Alexis_Trupin_NA.png" alt="Mon CV">
 		</div>
 		<p><a href="cv/CV_Alexis_Trupin_NA.pdf">Télécharger le CV</a></p>
-	</div>
-
-	<div class="container">
-		<div class="cardboard github">
-			<img src="assets/github.png" alt="Logo GitHub">
-			<h3><a href="https://github.com/HydroSnow">github.com/HydroSnow</a></h3>
-		</div>
-		<div class="cardboard mail">
-			<img src="assets/mail.png" alt="Logo E-Mail">
-			<h3><a href="mailto:trupin.alexis@gmail.com">trupin.alexis@gmail.com</a></h3>
-		</div>
-		<div class="cardboard linkedin">
-			<img src="assets/linkedin.png" alt="Logo LinkedIn">
-			<h3><a href="https://www.linkedin.com/in/trupin/">linkedin.com/in/trupin</a></h3>
+		<div class="link-holder">
+			<a href="https://github.com/HydroSnow"><div class="link">
+				<img src="assets/github.png" alt="Logo GitHub">
+				<h3>GitHub</h3>
+			</div></a>
+			<a href="mailto:trupin.alexis@gmail.com"><div class="link">
+				<img src="assets/mail.png" alt="Logo E-Mail">
+				<h3>E-Mail</h3>
+			</div></a>
+			<a href="https://www.linkedin.com/in/trupin/"><div class="link">
+				<img src="assets/linkedin.png" alt="Logo LinkedIn">
+				<h3>LinkedIn</h3>
+			</div></a>
 		</div>
 	</div>
 
